@@ -32,6 +32,45 @@ const STUDY_DATA = [
   },
 
   {
+    id: "shablonlar",
+    title: "Shablon javoblar — har yo'nalish uchun mukammal namuna",
+    icon: "⭐",
+    intro: "Har bir yo'nalish (mezon) uchun flagman darajadagi tayyor shablon. Tuzilishi: TA'RIF → AMALIYOT (bosqichlar) → IT USTUNLIK → BOLA MANFAATI bilan yakun.",
+    items: [
+      {
+        q: "1️⃣ KASBLAR: Zamonaviy mehnat bozorida qaysi kasblar talab yuqori va siz o'quvchilarni qanday tayyorlaysiz?",
+        a: "Hurmatli komissiya a'zolari! Bugungi mehnat bozori global raqamlashtirish va \"yashil iqtisodiyot\" ta'sirida tubdan o'zgarmoqda. Kelgusi 10 yilda eng talabgir kasblar — sun'iy intellekt va katta ma'lumotlar muhandisi, kiberxavfsizlik mutaxassisi, muqobil energiya muhandisi, agrotexnolog va raqamli marketolog bo'ladi.\n\nLekin men o'quvchilarga shuni singdiraman: bugun muhimi — aniq kasb emas, balki KOMPETENSIYA. Ya'ni \"4C\" — tanqidiy fikrlash, ijodkorlik, muloqot va hamkorlik, shuningdek raqamli savodxonlik va ingliz tili. Chunki kassir, oddiy operator yoki tarjimon kabi kasblar yo'qoladi, ammo o'rganishni biladigan inson hech qachon ishsiz qolmaydi.\n\nTATU bitiruvchisi sifatida men, ayniqsa AI va kiberxavfsizlik yo'nalishida o'quvchilarga nafaqat nazariya, balki real ko'nikma o'rgata olaman — bu mening eng katta ustunligim.\n\nAmaliyotda men \"Mening kelajakdagi kasbim\" dasturi asosida har bir o'quvchini \"Xohlayman – Qila olaman – Kerak\" formulasi bo'yicha yo'naltiraman: uning qiziqishi, qobiliyati va bozor talabi kesishgan nuqtani topaman.\n\nPirovard maqsadim — o'quvchini bitta diplomga emas, butun umr o'rganishga (lifelong learning) tayyor, raqobatbardosh shaxs qilib shakllantirish.",
+        keys: ["AI/kiberxavfsizlik", "kasb emas — kompetensiya", "4C", "TATU ustunlik", "Xohlayman-Qila olaman-Kerak", "lifelong learning"]
+      },
+      {
+        q: "2️⃣ AKADEMIK: Kasbga yo'naltirish va o'quvchilarni oliy ta'limga tayyorlash ishini qanday tashkil qilasiz?",
+        a: "Men kasbga yo'naltirishni ilmiy, tizimli va bosqichma-bosqich olib boraman.\n\nBirinchidan, 7-sinfdan boshlab maktab psixologi bilan birgalikda har bir o'quvchining qiziqishi, qobiliyati va temperamentini test (Holland/Klimov), kuzatuv va suhbat orqali aniqlayman. Bitta testga emas, kompleks ma'lumotga tayanaman.\n\nIkkinchidan, \"Mening kelajakdagi kasbim\" dasturi asosida kasblar bilan amaliy tanishtiraman: videoroliklar, korxonalarga ekskursiyalar va kasb egalari bilan jonli uchrashuvlar orqali.\n\nUchinchidan, oliygohga kirmoqchi bo'lganlar uchun aniq yo'l xaritasi tuzaman: o'quvchini kuchli fan o'qituvchisiga biriktiraman, muntazam MOCK (sinov) imtihonlar o'tkazib uni real imtihon muhitiga va stressga tayyorlayman.\n\nIqtidorlilarni \"Prezident iqtidorli farzandlari\" dasturi orqali nufuzli, shu jumladan xorijiy oliygohlarga (IELTS/TOEFL, FLEX, DAAD) tayyorlayman, motivatsion xat va grant hujjatlarida hamrohlik qilaman.\n\nIT mutaxassisi sifatida raqamli kasblar bo'yicha o'quvchilarga eng aniq va real ma'lumot bera olaman. Maqsadim — har bir o'quvchini imkon qadar grant asosida o'ziga mos oliygohga kirgizish.",
+        keys: ["psixolog (7-sinf)", "Holland/Klimov", "MOCK", "fan o'qituvchisiga biriktirish", "Prezident iqtidorli farzandlari", "grant/motivatsion xat"]
+      },
+      {
+        q: "3️⃣ KLUBLAR: Qaysi klublarni tashkil etasiz va ularni qanday boshqarasiz?",
+        a: "Nizomga ko'ra men yetti klubni tashkil etaman: \"Turon teatr\", \"Iqtidor ansambli\", \"Jadidlar izidan\", \"Eco-schools Uzbekistan\", \"Xorijiy tillar\", \"Debat\" va \"Raqamli avlod qizlari\". Har bir klub aniq bir ko'nikmani beradi: \"Debat\" — tanqidiy fikrlash va notiqlik, \"Jadidlar izidan\" — milliy o'zlik, \"Raqamli avlod qizlari\" — IT ko'nikmalari.\n\nHar qanday klub yoki tadbirni men bosqichma-bosqich tashkil qilaman: maqsadni belgilayman → ishchi guruh tuzaman → reja va ssenariy tayyorlayman → sifatli o'tkazaman → g'oliblarni rag'batlantirib, jarayonni ijtimoiy tarmoqlarda yoritaman.\n\nYettita klubni birvarakayiga boshqarish uchun har biriga alohida reja, jadval va mas'ul rahbar tayinlayman, o'quvchilarni qiziqishiga qarab taqsimlayman va klublarni o'zaro bog'layman.\n\nIT mutaxassisi sifatida men bu monitoringni \"Ijtimoiy portfolio\" moduli orqali raqamli va tizimli yuritaman — bu vaqtni tejaydi va xatoni kamaytiradi. Ayniqsa \"Raqamli avlod qizlari\"ni shaxsan o'zim Canva, SMM va dasturlash asoslarini o'rgatib olib boraman.\n\nMaqsadim — har bir o'quvchi kamida bitta klubda faol ishtirok etishi.",
+        keys: ["7 klub", "6 bosqich", "reja+jadval+rahbar", "Ijtimoiy portfolio (raqamli)", "Raqamli avlod qizlari — shaxsan", "har bola — 1 klub"]
+      },
+      {
+        q: "4️⃣ ISTIQBOL: Maslahatchi kim va sizning istiqbolli rejangiz qanday? (Flagman)",
+        a: "Maktab maslahatchisi — Prezidentimizning 2025-yil 8-sentabrdagi PQ-277-son hamda Vazirlar Mahkamasining 2025-yil 10-dekabrdagi 776-son qarorlari asosida joriy etilgan, \"Kelajak\" markazining maktabdagi vertikal tuzilmasidir. Men o'quvchi, ota-ona, maktab va markaz o'rtasida ko'prik vazifasini bajaraman.\n\nIstiqbolli rejam aniq:\n• 1-oyda o'quvchilar ma'lumotlar bazasini tuzaman va so'rovnoma orqali qiziqishni aniqlayman;\n• 1-chorakda 3–4 klubni ishga tushirib, \"O'quvchilar kengashi\" saylovini o'tkazaman;\n• 2-chorakda 7–9-sinflarda kasbga yo'naltirish va iqtidorlilar uchun MOCK imtihonlarni boshlayman;\n• Yil yakunida kamida bitta yirik festival o'tkazib, qo'shimcha ta'limga jalbni oshiraman.\n\n3–5 yil ichida menejerlik sertifikatini olib, maktabni tumandagi eng kuchli raqamli ta'lim markaziga aylantirishni maqsad qilaman.\n\nNega aynan men? Chunki TATU bitiruvchisiman — dasturlash va kiberxavfsizlikni bilaman; Nizomni puxta bilaman; va men buni lavozim emas, missiya deb bilaman.\n\nPirovard maqsadim — har bir o'quvchini bugungi imtihonga emas, kelajak mehnat bozoriga tayyorlash.",
+        keys: ["PQ-277, 776", "ko'prik", "1-oy/1-chorak/yil yakuni", "raqamli ta'lim markazi", "lavozim emas, missiya"]
+      },
+      {
+        q: "5️⃣ KEYSLAR: Muammoli vaziyatlarni qanday hal qilasiz? (Universal algoritm)",
+        a: "Men har qanday muammoli vaziyatni bitta universal algoritm asosida, hissiyotga berilmasdan hal qilaman:\n\n1. Hech kimni AYBLAMAYMAN, avval diqqat bilan TINGLAYMAN;\n2. Muammoning haqiqiy SABABINI aniqlayman;\n3. Quruq gap emas, DALILGA tayanaman — test natijalari, portfolio, real misollar;\n4. Yolg'iz hal qilmayman — psixolog, ota-ona yoki ma'muriyat bilan HAMKORLIK qilaman;\n5. Har bir qarorda BOLANING MANFAATI va psixikasini birinchi o'ringa qo'yaman.\n\nMisol uchun, bola IT'ni, ota-ona shifokorlikni xohlasa — men \"oltin o'rta\" yechimni taklif qilaman: bioinformatika yoki tibbiy kibernetika kabi ikkala tomonni qondiruvchi yangi kasblar.\n\nAgar resurs yoki sharoit yetishmasa, \"sharoit yo'q\" deb qo'l qovushtirmayman — Nizomdagi huquqim asosida talab qilaman, grant loyihalar va homiylarni jalb qilaman.\n\nMening tamoyilim: har bir muammo — yechilishi mumkin bo'lgan vazifa, har bir bola esa — alohida e'tiborga loyiq shaxs.",
+        keys: ["5 qadam algoritm", "ayblamayman → sabab → dalil → hamkorlik → bola manfaati", "oltin o'rta", "qo'l qovushtirmayman"]
+      },
+      {
+        q: "6️⃣ TARBIYA: O'quvchilarda vatanparvarlik va milliy qadriyatlarni qanday tarbiyalaysiz?",
+        a: "Mening tamoyilim aniq: tarbiya quruq nasihat va shior bilan emas, MUHIT, NAMUNA va AMALIY HARAKAT bilan shakllanadi. Shuning uchun har bir qadriyatni amaliy loyiha orqali singdiraman.\n\nVatanparvarlikni amaliyotda tarbiyalayman: tarixiy obidalarga ekskursiyalar, \"Jadidlar izidan\" klubi orqali Behbudiy, Cho'lpon, Avloniy kabi sakkiz allomaning merosini o'rganish, har dushanba Davlat madhiyasini jonli kuylash va obodonlashtirish kabi ezgu ishlar.\n\nMilliy va umuminsoniy qadriyatlarni muvozanatda beraman: bir tomondan Navro'z, kitobxonlik, milliy o'zlik; ikkinchi tomondan \"Debat\" va \"Do'stlik festivali\" orqali bag'rikenglik — chunki maqsadim o'z xalqini sevadigan, ayni paytda dunyoga ochiq inson tarbiyalash.\n\nHalollik, va'daga vafo va qariyalarga hurmat kabi fazilatlarni amaliy loyihalar — \"Halollik do'koni\" va \"Nuroniylar duosi\" volontyorligi orqali singdiraman.\n\nMen raqamli fuqarolikni ham o'rgataman: internet madaniyati, axborot xavfsizligi va feyk axborotni tanish — bu mening sohamiz.\n\nMaqsadim — o'quvchi \"Vatan uchun men nima qila olaman?\" degan savolga amaliy javob topadigan, daxldorlik tuyg'usiga ega barkamol shaxs bo'lib yetishishi.",
+        keys: ["muhit-namuna-amaliy harakat", "8 jadid", "dushanba madhiya", "Do'stlik festivali", "Halollik do'koni/Nuroniylar duosi", "raqamli fuqarolik"]
+      }
+    ]
+  },
+
+  {
     id: "kasblar",
     title: "1-mezon: Kasblar va mehnat bozori",
     icon: "💼",
@@ -761,6 +800,7 @@ const STUDY_DATA = [
 // 6 ta asosiy bo'lim (sidebar uchun). Har biri bir yoki bir nechta mavzuni o'z ichiga oladi.
 const STUDY_GROUPS = [
   { id: "g0", icon: "🚀", title: "Kirish — Flagman javob & maslahatlar", sections: ["kirish"] },
+  { id: "gs", icon: "⭐", title: "Shablon javoblar — har yo'nalish uchun namuna", sections: ["shablonlar"] },
   { id: "g1", icon: "💼", title: "1-mezon: Kasblar va mehnat bozori", sections: ["kasblar"] },
   { id: "g2", icon: "🎓", title: "2-mezon: Akademik va oliygohlar", sections: ["akademik"] },
   { id: "g3", icon: "🎭", title: "3-mezon: Klublar va tadbirlar", sections: ["klublar"] },
