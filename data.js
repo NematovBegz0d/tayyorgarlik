@@ -736,3 +736,14 @@ const STUDY_DATA = [
     ]
   }
 ];
+
+
+// 6 ta asosiy bo'lim (sidebar uchun). Har biri bir yoki bir nechta mavzuni o'z ichiga oladi.
+const STUDY_GROUPS = [
+  { id: "g1", icon: "💼", title: "1-mezon: Kasblar va mehnat bozori", sections: ["kasblar"] },
+  { id: "g2", icon: "🎓", title: "2-mezon: Akademik va oliygohlar", sections: ["akademik"] },
+  { id: "g3", icon: "🎭", title: "3-mezon: Klublar va tadbirlar", sections: ["klublar"] },
+  { id: "g4", icon: "🎯", title: "4-mezon: Istiqbol reja & huquqiy asos", sections: ["kirish", "istiqbol", "huquqiy", "yodlash"] },
+  { id: "g5", icon: "⚖️", title: "5-mezon: Muammoli vaziyatlar & sinov", sections: ["keyslar", "sinov"] },
+  { id: "g6", icon: "🌳", title: "6-mezon: Tarbiya va qadriyatlar", sections: ["tarbiya"] }
+];
