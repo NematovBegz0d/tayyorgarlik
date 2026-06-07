@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎓 Maktab Maslahatchisi — Suhbatga Tayyorgarlik</title>
+  <meta name="description" content="Maktab maslahatchisi suhbatiga to'liq tayyorgarlik materiali — toggle, progress va yodlash uchun qulay format." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="themeToggle" class="theme-toggle" title="Mavzu (kun/tun)">🌙</button>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">🎓 MAKTAB MASLAHATCHISI</div>
+      <h1>Suhbatga To'liq Tayyorgarlik</h1>
+      <p class="hero-sub">PQ-277 (08.09.2025) · 776-son (10.12.2025) · "Kelajak" markazi</p>
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>Umumiy o'zlashtirish</span>
+          <span id="progressPercent">0%</span>
+        </div>
+        <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+        <div class="progress-meta"><span id="progressCount">0 / 0</span> ta savol yodlandi</div>
+      </div>
+
+      <div class="hero-actions">
+        <button id="resetProgress" class="btn-ghost">↺ Progressni tozalash</button>
+        <button id="expandAll" class="btn-ghost">⤢ Hammasini ochish</button>
+        <button id="collapseAll" class="btn-ghost">⤡ Hammasini yopish</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <div class="search-inner">
+      <span class="search-icon">🔍</span>
+      <input id="searchInput" type="text" placeholder="Savol, kalit so'z yoki mavzu bo'yicha qidiring..." />
+      <button id="clearSearch" class="clear-search" title="Tozalash">✕</button>
+    </div>
+  </div>
+
+  <nav id="sectionNav" class="section-nav"></nav>
+
+  <main id="content" class="content"></main>
+
+  <footer class="footer">
+    <p>💡 Har javobni "bola manfaati birinchi" bilan yakunlang · IT ustunligingizni eslating · Hujjat raqamini ayting</p>
+    <p class="footer-small">Omad tilaymiz! 🌟 — Tayyorgarlik materiali</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" title="Yuqoriga">↑</button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
