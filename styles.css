@@ -96,6 +96,25 @@ body {
   border-radius: var(--radius);
   padding: 14px 16px;
 }
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 2. The track (background of the scrollbar) */
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* 3. The thumb (the draggable part of the scrollbar) */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* 4. Thumb on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .progress-label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
 .progress-bar { height: 10px; background: rgba(255, 255, 255, 0.25); border-radius: 30px; overflow: hidden; }
 .progress-fill {
