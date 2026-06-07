@@ -17,6 +17,16 @@ const STUDY_DATA = [
         q: "IT USTUNLIK JUMLASI (har javobda eslating)",
         a: "Men TATU — Toshkent axborot texnologiyalari universiteti bitiruvchisiman, dasturlash va kiberxavfsizlik mutaxassisiman. Shuning uchun o'quvchilarni zamonaviy kasblarga nafaqat yo'naltira olaman, balki ularga real ko'nikma — dasturlash, kiberxavfsizlik va sun'iy intellekt asoslarini bevosita o'rgata olaman. Bu mening eng katta ustunligim.",
         keys: ["TATU", "dasturlash", "kiberxavfsizlik", "real ko'nikma o'rgataman"]
+      },
+      {
+        q: "FLAGMAN JAVOB (to'liq variant): Maktab maslahatchisi kim? Istiqbolli rejangiz?",
+        a: "Hurmatli komissiya a'zolari! Maktab maslahatchisi — bu O'zbekiston Respublikasi Prezidentining 2025-yil 8-sentabrdagi PQ-277-son hamda Vazirlar Mahkamasining 2025-yil 10-dekabrdagi 776-son qarorlari asosida joriy etilgan, \"Kelajak\" markazining umumiy o'rta ta'lim maktabidagi vertikal tuzilmasidir.\n\nMen shunchaki maslahat beruvchi emasman — men o'quvchi, ota-ona, maktab va \"Kelajak\" markazi o'rtasida ko'prik vazifasini bajaruvchi yo'naltiruvchi, ruhiy ko'makchi va tashabbuslarni qo'llab-quvvatlovchi shaxsman.\n\nMening asosiy maqsadim — har bir o'quvchining iqtidorini ro'yobga chiqarish va uni faqat bugungi imtihonga emas, balki kelajak mehnat bozoriga tayyorlashdir.\n\nIstiqbolli rejam uch yo'nalishdan iborat:\n1. \"Prezident iqtidorli farzandlari\" milliy dasturini keng targ'ib qilib, tarmoq to'garaklari va \"O'quvchilar kengashi\" faoliyatini tizimli yo'lga qo'yaman.\n2. \"Mening kelajakdagi kasbim\" dasturi asosida 7-9-sinf o'quvchilarining kasbiy qiziqishini maktab psixologi bilan birgalikda aniqlab, har bir o'quvchi uchun shaxsiy kasbga yo'naltirish tavsiyasini ishlab chiqaman va uni ota-ona bilan muhokama qilaman.\n3. \"Turon teatr\", \"Jadidlar izidan\", \"Debat\" va \"Raqamli avlod qizlari\" kabi klublar orqali o'quvchilarda yetakchilik, vatanparvarlik va ijodkorlikni shakllantiraman.\n\nPirovard maqsadim — har bir o'quvchi o'z salohiyatini anglab, ongli qaror qabul qila oladigan, Vatanga sadoqatli barkamol shaxs bo'lib yetishishidir.",
+        keys: ["PQ-277, 776", "vertikal tuzilma", "ko'prik", "3 yo'nalish", "Prezident iqtidorli farzandlari", "Mening kelajakdagi kasbim", "klublar", "barkamol shaxs"]
+      },
+      {
+        q: "💡 Suhbatda omadli bo'lish uchun maslahatlar",
+        a: "• Hujjat nomi va raqamini ayting — PQ-277, 776-son deb aniq aytsangiz, komissiyada kuchli taassurot qoldirasiz.\n• Ishonchli va xotirjam gapiring — har savolga avval qisqa ta'rif, so'ng misol bilan javob bering.\n• \"Men tashkil etaman, men yo'lga qo'yaman\" kabi faol fe'l ishlating — bu sizning tashabbuskorligingizni ko'rsatadi.\n• Har javobni amaliyot bilan bog'lang — faqat nazariya emas, \"men buni shunday qilaman\" deb ayting.\n• Tabassum bilan, sekin va ravon gapiring (suhbat ko'pincha videoga olinadi).\n• Har javobni \"bola manfaati birinchi\" g'oyasi bilan yakunlang.",
+        keys: ["hujjat raqami", "qisqa ta'rif + misol", "faol fe'l", "amaliyot bilan bog'lash", "tabassum", "bola manfaati"]
       }
     ]
   },
@@ -662,6 +672,16 @@ const STUDY_DATA = [
         keys: ["4 bosqich", "maktabgacha-boshlang'ich-tayanch o'rta-o'rta"]
       },
       {
+        q: "Markaz o'quvchilarni qaysi zamonaviy yo'nalishlarga jalb etadi?",
+        a: "Markaz o'quvchilarni sun'iy intellekt va robototexnika yo'nalishlariga jalb etadi. Bundan tashqari mobilograf, dasturlash, SMM (ilgari surish va reklama qilish) hamda modellashtirish kabi to'garaklar tashkil etiladi. Bu o'quvchining yaratuvchanlik ko'nikmalarini rivojlantiradi.",
+        keys: ["sun'iy intellekt", "robototexnika", "mobilograf", "dasturlash, SMM", "modellashtirish"]
+      },
+      {
+        q: "Maslahatchining ish rejasi qanday moliyalashtiriladi?",
+        a: "Ish rejamda belgilangan chora-tadbirlar umumiy o'rta ta'lim maktabining ish rejasiga kiritiladi va maktab tomonidan moliyalashtiriladi.",
+        keys: ["maktab ish rejasiga kiritiladi", "maktab moliyalashtiradi"]
+      },
+      {
         q: "\"Kelajak\" markazlarini qo'llab-quvvatlash Jamg'armasi qanday shakllanadi?",
         a: "Bir necha manbadan: Davlat budjetidan har yili 70 milliard so'm; ota-onalar badali to'lovining 10 foizi; homiylik xayriyalari hamda xalqaro grantlar. Jamg'armaga tushgan mablag'ning kamida 40 foizi moddiy-texnika bazasini mustahkamlashga sarflanadi.",
         keys: ["70 mlrd so'm/yil", "to'lovning 10%", "kamida 40% moddiy-texnika"]
@@ -740,10 +760,11 @@ const STUDY_DATA = [
 
 // 6 ta asosiy bo'lim (sidebar uchun). Har biri bir yoki bir nechta mavzuni o'z ichiga oladi.
 const STUDY_GROUPS = [
+  { id: "g0", icon: "🚀", title: "Kirish — Flagman javob & maslahatlar", sections: ["kirish"] },
   { id: "g1", icon: "💼", title: "1-mezon: Kasblar va mehnat bozori", sections: ["kasblar"] },
   { id: "g2", icon: "🎓", title: "2-mezon: Akademik va oliygohlar", sections: ["akademik"] },
   { id: "g3", icon: "🎭", title: "3-mezon: Klublar va tadbirlar", sections: ["klublar"] },
-  { id: "g4", icon: "🎯", title: "4-mezon: Istiqbol reja & huquqiy asos", sections: ["kirish", "istiqbol", "huquqiy", "yodlash"] },
+  { id: "g4", icon: "🎯", title: "4-mezon: Istiqbol reja & huquqiy asos", sections: ["istiqbol", "huquqiy", "yodlash"] },
   { id: "g5", icon: "⚖️", title: "5-mezon: Muammoli vaziyatlar & sinov", sections: ["keyslar", "sinov"] },
   { id: "g6", icon: "🌳", title: "6-mezon: Tarbiya va qadriyatlar", sections: ["tarbiya"] }
 ];
