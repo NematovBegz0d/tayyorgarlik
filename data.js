@@ -153,8 +153,8 @@ const STUDY_DATA = [
       },
       {
         q: "16. Kelajakda yaratilishi kutilayotgan kasblar",
-        a: "Kosmik turizm operatori, AI-axloq nazoratchisi, genetik muhandis, VR dizayneri, \"yashil\" energiya mutaxassisi. Bugungi maktab o'quvchisi hali mavjud bo'lmagan kasbda ishlashi mumkin — shuning uchun ularni yangilikka ochiq bo'lishga undayman.",
-        keys: ["kosmik turizm", "AI-axloq", "genetik muhandis", "VR", "hali yo'q kasb"]
+        a: "Eng qiziq haqiqat shundaki, bugun partada o\u02BBtirgan o\u02BBquvchilarimizning ko\u02BBpchiligi kelajakda hozir nomi ham yo\u02BBq kasblarda ishlaydi.\nTasavvur qilaylik: kosmik sayohatlar uyushtiruvchi, sun\u02BFiy intellekt qarorlarining adolatini nazorat qiluvchi, inson salomatligini gen darajasida tuzatuvchi muhandis, virtual olamlar yaratuvchi dizayner. Yigirma yil avval bu kasblar fantastika edi — bugun esa ostonada turibdi. Sabab oddiy: har bir yangi ixtiro yangi ehtiyoj tu\u02B3diradi, har bir ehtiyoj esa yangi kasbni dunyoga keltiradi.\nEndi eng muhim savol: men hali yo\u02BBq kasbga bolani qanday tayyorlayman? Aniq kasbni emas — moslashuv qobiliyatini beraman. Bolaga bitta baliqni emas, baliq tutishni o\u02BBrgataman.\nTATU bitiruvchisi sifatida texnologiya qanday tez eskirishini o\u02BBz ko\u02BBzim bilan ko\u02BBrganman. Shuning uchun o\u02BBquvchilarimga eng qimmatli ko\u02BBnikmani — o\u02BBzgarishdan qo\u02BBrqmaslik va doimo yangidan o\u02BBrganishni singdiraman. Men bolani bugunning emas, ertaning insoni qilib tarbiyalashga intilaman.",
+        keys: ["kosmik turizm", "AI-axloq", "genetik muhandis", "VR", "hali yo'q kasb", "moslashuv qobiliyati", "baliq tutishni o'rgataman"]
       },
       {
         q: "17. An'anaviy/milliy kasblar (afzallik va kamchilik)",
