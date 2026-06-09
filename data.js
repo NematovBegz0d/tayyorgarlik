@@ -113,18 +113,18 @@ const STUDY_DATA = [
       },
       {
         q: "8. Yuqori talabdagi kasblar va jamiyat taraqqiyotidagi o'rni (faktlar bilan)",
-        a: "IT/dasturchi, AI, kiberxavfsizlik, muhandis, shifokor, moliya tahlilchisi. IT mutaxassis raqamli iqtisodiyotni, muhandis sanoatni, shifokor sog'liqni rivojlantiradi. Fakt: rivojlangan davlatlar iqtisodiyoti texnologiyaga asoslanadi; O'zbekistonda IT-Park eksporti yildan-yilga oshmoqda.",
-        keys: ["IT, AI, muhandis, shifokor", "IT-Park eksporti oshmoqda"]
+        a: "Bugungi eng talabgir kasblar — IT va dasturlash, sun'iy intellekt, kiberxavfsizlik, shifokor-jarroh, muhandis va moliya tahlilchisi. Bu kasblar daromad ham, jamiyatga foyda ham keltiradi.\nLekin men o'quvchilarga doimo bir haqiqatni eslataman: maosh — kasbning mevasi, ildizi emas. Faqat pulni ko'zlab kasb tanlagan inson go'yo notanish manzilga shoshilib chiqqan yo'lovchiga o'xshaydi.\nShuning uchun men kasbga yo'naltirishda doimo uch savolni birga qo'yaman: o'quvchi nimani sevadi, nimaga qodir va jamiyatga nima kerak. Aynan shu uchovi uchrashgan joyda haqiqiy kasb tug'iladi.",
+        keys: ["IT, AI, kiberxavfsizlik, muhandis, shifokor", "maosh — meva, ildiz emas", "sevadi+qodir+kerak"]
       },
       {
         q: "9. Masofaviy (onlayn) ishlasa bo'ladigan kasblar",
-        a: "Full-stack dasturchi, data analitik, grafik va UX/UI dizayner, SMM mutaxassisi, kopirayter, onlayn o'qituvchi, tarjimon, video-montajchi. Bu kasblar ayniqsa nogironligi bo'lgan va uzoq hududdagi o'quvchilar uchun teng imkoniyat yaratadi — joydan turib dunyoga ishlash mumkin.",
-        keys: ["dasturchi", "dizayner", "SMM", "kopirayter", "joydan turib dunyoga"]
+        a: "Internet insoniyat tarixida birinchi marta mehnatni joydan ozod qildi. Endi inson qayerda yashashidan qat'i nazar, butun dunyo uchun ishlay oladi.\nMasofaviy ishlasa bo'ladigan kasblar — dasturchi, veb va grafik dizayner, kontent yaratuvchi, SMM mutaxassisi, onlayn o'qituvchi, tarjimon, video-montajchi va data analitik. Bularning umumiy xususiyati shuki, ish natijasi qo'l kuchida emas, bilim va ijodda o'lchanadi.\nBu ayniqsa bizning sharoitimiz uchun katta imkoniyat. Uzoq tumanda yashayotgan qobiliyatli yosh ham endi shahar markazidagi tengdoshi bilan teng sharoitda mehnat qila oladi. Masofa endi to'siq emas.\nMaslahatchi sifatida men o'quvchilarga shuni uqtiraman: internet — vaqt o'tkazadigan o'yingoh emas, balki butun dunyoga ochilgan ish stoli bo'lishi mumkin.",
+        keys: ["dasturchi", "dizayner", "SMM", "tarjimon", "joydan turib dunyoga", "masofa — to'siq emas", "internet — ish stoli"]
       },
       {
         q: "10. Qaysi kasblarga ijodiy yondashuv kerak? (faktlar bilan)",
-        a: "Marketing (marketolog, kopirayter), dizayn (UX/UI, grafik), arxitektura, kontent-meykerlik, san'at, IT. Fakt: McKinsey tadqiqotlariga ko'ra, ijodiy fikrlash talab etadigan ish o'rinlari AI va robotlashtirish davrida eng kam qisqaradigan va eng yuqori maoshli sohalardir. Chunki mashina takrorlaydi, inson yaratadi.",
-        keys: ["marketing", "dizayn", "kontent", "McKinsey: ijod eng kam qisqaradi"]
+        a: "Sun'iy intellekt davrida bir savol tobora muhim bo'lmoqda: mashina inson o'rnini bosa olmaydigan narsa nima? Javob — ijod.\nIjodiy yondashuv talab qiladigan kasblar ko'p: dizayner, arxitektor, reklama va marketing mutaxassisi, kontent yaratuvchi, san'atkor, jurnalist, hatto muhandis va dasturchi ham. Bu kasblarda tayyor shablon yetarli emas — har safar yangi g'oya, yangi yechim kerak.\nMashina mavjud ma'lumotni qayta ishlaydi, lekin yo'qdan yangilik yarata olmaydi. Aynan shu nuqtada inson mashinadan ustun turadi — ijod insonning eng qudratli qurolidir.\nShuning uchun men o'quvchilarda ijodiy tafakkurni erta uyg'otishni muhim deb bilaman. Turon teatr klubi orqali sahna va badiiy didni, Iqtidor ansambli orqali musiqiy ijodni, Debat klubi orqali esa mustaqil va noodatiy fikrlashni rivojlantiraman.",
+        keys: ["dizayner/arxitektor/marketing/kontent", "mashina — takrorlaydi, inson — yaratadi", "Turon teatr/Iqtidor ansambli/Debat", "ijod — insonning qudratli quroli"]
       },
       {
         q: "11. Zamonaviy texnologiyalar davrida kasblarning afzalligi (faktlar bilan)",
@@ -133,18 +133,18 @@ const STUDY_DATA = [
       },
       {
         q: "12. Soft skills nima va qaysi kasbda muhim?",
-        a: "Soft skills — shaxsiy va ijtimoiy ko'nikmalar: muloqot, jamoada ishlash, liderlik, vaqtni boshqarish, tanqidiy fikrlash, emotsional intellekt. Oddiy qilib: hard skill — \"nima qila olishing\", soft skill — \"qanday qila olishing\". Deyarli barcha kasbda, ayniqsa \"inson-inson\" sohalarida (rahbar, o'qituvchi, shifokor, menejer) muhim. Hard skill ishga joylashtiradi, soft skill karyerada o'stiradi.",
-        keys: ["muloqot", "jamoa", "liderlik", "hard — nima, soft — qanday", "ishga joylashtiradi / o'stiradi"]
+        a: "Har bir insonda ikki xil ko'nikma bo'ladi. Biri — hard skills, ya'ni \"nimani qila olishing\": dasturlash, hisob-kitob, til bilish. Ikkinchisi — soft skills, ya'ni \"qanday qila olishing\": muloqot, jamoada ishlash, sabr, mas'uliyat, liderlik.\nOddiy qilib aytsam: hard skills sizni ishga oladi, soft skills sizni ishda olib qoladi va yuqoriga ko'taradi.\nSoft skills qaysi kasbda muhim? Deyarli barchasida, ayniqsa inson bilan ishlaydigan sohalarda — o'qituvchi, shifokor, psixolog, menejer, rahbar. Bugun ko'plab ish beruvchilar diplomdan ham ko'ra nomzodning muloqot madaniyati va jamoaga moslashuviga e'tibor qaratadi.\nEng qiziq tomoni shuki, soft skills aynan mashina taqlid qila olmaydigan, sof insoniy fazilatlardir. Men bu ko'nikmalarni darslikdan emas, amaliyotdan beraman: Debat klubi notiqlik, O'quvchilar kengashi liderlik, jamoaviy loyihalar hamkorlik ko'nikmasini shakllantiradi.",
+        keys: ["hard — nima, soft — qanday", "ishga oladi / ishda o'stiradi", "mashina taqlid qilolmaydi", "Debat/Kengash/jamoaviy loyiha"]
       },
       {
-        q: "13. Hayot davomida ta'lim (lifelong learning) va qayta tayyorlov",
-        a: "Bitta diplom bilan butun umr ishlash davri tugadi. Hayot davomida ta'lim — bilimni doimiy yangilash (misol: 20 yillik o'qituvchining AI dasturlarini o'rganishi). Qayta tayyorlov — kasbni butunlay yangilash (misol: ishsiz yoshning Monomarkazda 3 oyda dizayner bo'lib chiqishi va frilanser sifatida daromad topishi). Men o'quvchilarga \"o'rganishni o'rganish\"ni singdiraman.",
-        keys: ["diplom davri tugadi", "o'qituvchi+AI", "Monomarkaz 3 oy", "o'rganishni o'rganish"]
+        q: "13. Hayot davomida ta'lim (lifelong learning), MOOC, qayta tayyorlov",
+        a: "Bir paytlar inson bir marta o'qib, bir kasb egallab, butun umr shu bilan yashardi. Bugun bu davr tugadi. Bilim juda tez yangilanmoqda — kecha o'rgangan narsa bugun eskirishi mumkin.\nShuning uchun umrbod ta'lim — lifelong learning — zamonamizning asosiy talabiga aylandi. Bu shuni anglatadiki, o'rganish maktab yoki universitet bilan tugamaydi, balki butun umr davom etadi.\nBu yo'lda yangi imkoniyat — MOOC, ya'ni ommaviy ochiq onlayn kurslar (Coursera, edX kabi platformalar). Ular orqali inson uyida o'tirib, dunyoning eng nufuzli universitetlari darslarini, ko'pincha bepul o'rganishi mumkin. Qayta tayyorlov ham shu falsafaning bir qismi: bir kasb yo'qolsa, inson yangisini o'rganib, mehnat bozoriga qaytadi.\nMaslahatchi sifatida men o'quvchilarga eng muhim ko'nikmani — o'rganishni o'rganishni singdiraman. Chunki men ularga bitta tayyor bilim bersam, bu vaqtincha yordam beradi. Lekin mustaqil o'rganishni o'rgatsam, bu butun umrga yetadi.",
+        keys: ["lifelong learning", "MOOC: Coursera/edX", "bepul onlayn kurslar", "qayta tayyorlov", "o'rganishni o'rganish"]
       },
       {
         q: "14. Yo'qolmaydigan (uzoq muddatli) kasblar — afzallik va kamchilik",
-        a: "Insoniy empatiya va ijod talab qiladigan sohalar: shifokor-jarroh, psixolog, o'qituvchi, ijodkor-dizayner. Afzalligi: AI almashtirolmaydi, barqaror talab, yuqori nufuz. Kamchiligi: uzoq yillik o'qish, yuqori ruhiy yuklama (burnout xavfi).",
-        keys: ["shifokor", "psixolog", "o'qituvchi", "AI almashtirolmaydi", "uzoq o'qish, burnout"]
+        a: "Texnologiya qanchalik rivojlanmasin, ba'zi kasblar abadiy qoladi — chunki ular insonning eng asosiy ehtiyojlariga xizmat qiladi.\nBunday kasblar — shifokor, o'qituvchi, muhandis, oshpaz, qishloq xo'jaligi mutaxassisi. Inson har doim sog'liqqa, bilimga, oziq-ovqatga muhtoj bo'ladi. Shuning uchun bu kasblar hech qachon talabdan qolmaydi.\nAfzalligi — barqarorlik va ishonch. Bu kasbni egallagan inson kelajagidan xotirjam bo'ladi. Yana bir afzalligi — bu kasblar jamiyatda yuksak hurmatga sazovor.\nKamchiligi shundaki, ular uzoq va puxta tayyorgarlik talab qiladi. Bundan tashqari, bu kasb egasi doimo bilimini yangilab borishi shart — masalan, bugungi shifokor ham, o'qituvchi ham raqamli vositalarni bilishi kerak.\nMaslahatchi sifatida men o'quvchiga shuni tushuntiraman: barqaror kasb — bu rivojlanishdan to'xtash degani emas. Hatto eng qadimiy kasbda ham doimo o'rganib, zamonga hamqadam bo'lgan inson chinakam ustaga aylanadi.",
+        keys: ["shifokor/o'qituvchi/muhandis/oshpaz", "barqarorlik va hurmat", "uzoq tayyorgarlik", "bilimini yangilab borish", "barqaror kasb — rivojlanishdan to'xtash emas"]
       },
       {
         q: "15. Eng daromadli kasblar (bugun)",
@@ -158,8 +158,8 @@ const STUDY_DATA = [
       },
       {
         q: "17. An'anaviy/milliy kasblar (afzallik va kamchilik)",
-        a: "Novvoy, hunarmand, oshpaz, duradgor. Afzalligi: doimiy barqaror talab (odamlar doim non yeydi), mustaqil biznes imkoni, milliy meros saqlanadi. Kamchiligi: og'ir jismoniy mehnat, ish vaqti standart emas, daromad o'sishi chegaralangan. Eng yaxshi yo'l — milliy kasbni onlayn savdo va raqamli marketing bilan birlashtirish.",
-        keys: ["novvoy", "oshpaz", "doim talab", "og'ir mehnat", "onlayn savdo bilan birlashtirish"]
+        a: "Milliy hunarmandchilik — kulolchilik, kashtachilik, zardo'zlik, miskarlik — bu shunchaki kasb emas, balki avloddan-avlodga o'tib kelayotgan milliy xotira.\nAfzalliklari salmoqli. Birinchidan, bu kasblar xalqimizning o'zligini, madaniy merosini saqlaydi. Ikkinchidan, ularga doimiy talab bor — ayniqsa turizm rivojlanayotgan bugungi kunda milliy hunar mahsulotlari brendga aylanmoqda. Uchinchidan, hunarmand mustaqil, o'z ishining egasi bo'ladi.\nKamchiliklari ham bor. Bu kasblar ko'proq qo'l mehnatiga asoslanadi va vaqt talab qiladi. Bundan tashqari, zamon bilan yangilanmasa — bozori torayib qolishi mumkin.\nMening qarashim shu: milliy kasbni zamonaviylik bilan birlashtirish kerak. Men o'quvchilarni milliy hunarga Jadidlar izidan klubi orqali — o'zlik va meros ruhida qiziqtiraman, so'ng uni onlayn savdo va raqamli targ'ibot bilan boyitishga o'rgataman. Maqsadim — ildizi milliy, lekin shoxi zamonaviy bo'lgan yosh tarbiyalash.",
+        keys: ["kulolchilik/kashtachilik/zardo'zlik", "milliy meros + turizm brend", "mustaqil egasi", "zamonaviylik bilan birlashtirish", "Jadidlar izidan", "ildizi milliy, shoxi zamonaviy"]
       },
       {
         q: "18. Oilaviy/an'anaviy kasbni davom ettirish",
@@ -168,19 +168,33 @@ const STUDY_DATA = [
       },
       {
         q: "19. Zamonaviy kasblarga tayyorlaydigan davlat tashkilotlari",
-        a: "IT-Park (Raqamli texnologiyalar vazirligi) — dasturlash, dizayn, robototexnika; \"Ishga marhamat\" Monomarkazlari — 30+ zamonaviy va ishchi kasbni bepul o'rgatadi; Yoshlar ishlari agentligi — \"Ibrat farzandlari\", \"Ustoz AI\" loyihalari orqali til va texnologiya; \"El-yurt umidi\" jamg'armasi. Men shu tashkilotlar bilan hamkorlik qilaman.",
-        keys: ["IT-Park", "Ishga marhamat Monomarkaz", "Ibrat farzandlari, Ustoz AI", "El-yurt umidi"]
+        a: "O'zbekistonda yoshlarni zamonaviy kasblarga tayyorlash davlat siyosatining ustuvor yo'nalishiga aylangan. Buning uchun bir qancha kuchli tashkilot va dasturlar faoliyat yuritadi.\nAvvalo, Ixtisoslashtirilgan ta'lim muassasalari agentligi va biz xizmat qilayotgan \"Kelajak\" markazlari — bevosita iqtidorli yoshlarni aniqlash va yo'naltirish bilan shug'ullanadi. IT-Park yoshlarni axborot texnologiyalari va raqamli kasblarga tayyorlaydi. \"El-yurt umidi\" jamg'armasi iqtidorlilarga xorijda o'qish imkonini beradi. Bundan tashqari Yoshlar ishlari agentligi, \"Ishga marhamat\" monomarkazlari va \"Digital Generation Uzbekistan\" tashkilotlari ham yoshlarni kasb-hunarga yo'naltirishda faol.\nMaslahatchi sifatida mening vazifam — o'quvchi bilan bu imkoniyatlar o'rtasida ko'prik bo'lish. Ko'pincha o'quvchi qobiliyatli bo'ladi-yu, lekin qanday imkoniyatlar borligini bilmaydi. Men shu eshiklarni unga ko'rsataman.",
+        keys: ["Kelajak markazlari", "IT-Park", "El-yurt umidi", "Yoshlar ishlari agentligi", "Ishga marhamat monomarkaz", "Digital Generation Uzbekistan", "ko'prik bo'lish"]
       },
       {
-        q: "20. Raqobatbardosh kasb egasi qanday bo'lishi kerak?",
-        a: "Global bozor talabiga javob beradigan, ya'ni \"4C\" ko'nikmasiga ega: Critical thinking (tanqidiy fikrlash), Creativity (ijodkorlik), Communication (muloqot), Collaboration (hamkorlik). Bundan tashqari ingliz tilini biladigan, raqamli texnologiyalar bilan professional ishlaydigan va \"T-shaped\" (bir sohada chuqur, turdosh sohalarda umumiy bilim) mutaxassis.",
-        keys: ["4C", "ingliz tili", "raqamli", "T-shaped"]
+        q: "20. Raqobatbardosh kasb egasi qanday bo'ladi (4C)",
+        a: "Bugungi mehnat bozorida shunchaki diplomli bo'lish yetarli emas — raqobatbardosh bo'lish kerak. Jahon ta'limida buni \"4C\" deb ataladigan to'rt ko'nikma belgilaydi.\nBirinchisi — Critical thinking, ya'ni tanqidiy fikrlash: ma'lumotni ko'r-ko'rona qabul qilmasdan, tahlil qilib, o'z xulosasini chiqara olish. Ikkinchisi — Creativity, ya'ni ijodkorlik: muammoga yangicha, noodatiy yechim topa olish. Uchinchisi — Communication, ya'ni muloqot: o'z fikrini aniq yetkaza olish va boshqalarni tinglay olish. To'rtinchisi — Collaboration, ya'ni hamkorlik: jamoada, birga ishlay olish.\nBu to'rt ko'nikmaning go'zalligi shundaki, ular har qanday kasbga — shifokorga ham, dasturchiga ham, hunarmandga ham birdek kerak. Va eng muhimi — ularning hech birini mashina almashtira olmaydi.\nMen bu sifatlarni o'quvchilarda klublar tizimi orqali shakllantiraman: Debat tanqidiy fikrlash va muloqotni, Turon teatr ijodkorlik va sahna jasoratini, Eco-schools va jamoaviy loyihalar hamkorlikni o'rgatadi.",
+        keys: ["4C: Critical thinking/Creativity/Communication/Collaboration", "har kasbda kerak", "mashina almashtira olmaydi", "Debat/Turon teatr/Eco-schools"]
       },
       {
         q: "21. Nima uchun bir nechta ko'nikma o'rganish kerak? (mini skill)",
         a: "Bu zamonaviy dunyoda \"Slash career\" (ko'p tarmoqli karyera) deyiladi. Bir soha inqirozga uchrasa, ikkinchisi ishsizlikdan qutqaradi. Misol: ingliz tili o'qituvchisi SMM ni ham bilsa, xalqaro loyihalarda kontent-menejer bo'lib daromadini bir necha barobar oshiradi. Shuning uchun o'quvchilarni ko'p qirrali bo'lishga undayman.",
         keys: ["Slash career", "bir soha inqiroz — ikkinchisi qutqaradi", "o'qituvchi+SMM"]
-      }
+      },
+      {
+        q: "21a. Kasbga yo'naltirish (ASOSIY JAVOB — 4 bosqich)",
+        a: "Kasbga yo'naltirish — bir martalik maslahat emas, balki o'quvchi bilan 7-sinfdan boshlab olib boriladigan tizimli jarayon. Men buni to'rt bosqichda amalga oshiraman: Anglash → Tanishtirish → Yo'naltirish → Kuzatish.\nBirinchi bosqich — Anglash (diagnostika). Psixolog bilan birgalikda har bir o'quvchining qiziqishi, qobiliyati va xarakterini so'rovnoma, test va kuzatuv orqali aniqlayman. Chunki o'quvchi avval o'zini bilmasa, qaysi kasb unga mosligini ham bilolmaydi.\nIkkinchi bosqich — Tanishtirish. Men kasbni o'quvchiga jonli ko'rsataman: kasb egalarini maktabga taklif qilaman, korxonalarga ekskursiya uyushtiraman, \"Kasblar haftaligi\" tashkil etaman. O'quvchi kasbni faqat eshitmasin — ko'rsin, his qilsin.\nUchinchi bosqich — Yo'naltirish. Yig'ilgan ma'lumot asosida har bir o'quvchini o'z yo'liga yo'naltiraman: akademik moyillarni oliy ta'lim va litseyga, amaliy moyillarni kasb-hunar va texnikumga. Bu qarorni o'quvchi va ota-ona bilan birga, dalil asosida qabul qilaman.\nTo'rtinchi bosqich — Kuzatish. Har bir o'quvchining rivojlanishini \"Ijtimoiy portfolio\" orqali kuzatib boraman, kerak bo'lsa rejani moslashtiraman.\nMaqsadim — har bir o'quvchi \"hamma shunday qildi\" deb emas, balki \"bu mening yo'lim\" deb ishonch bilan kasb tanlashi.",
+        keys: ["4 bosqich: Anglash → Tanishtirish → Yo'naltirish → Kuzatish", "psixolog+test/so'rovnoma", "kasb egalari/ekskursiya/Kasblar haftaligi", "akademik yoki kasb-hunarga", "Ijtimoiy portfolio", "bu mening yo'lim"]
+      },
+      {
+        q: "21b. Kasb tanlash haftaligini qanday tashkil etasiz?",
+        a: "Kasblar haftaligi — o'quvchini kasb olamiga bevosita olib kiradigan eng ta'sirchan tadbir. Men uni puxta reja asosida o'tkazaman.\nAvval haftalik dasturini tuzaman — har bir kun bitta sohaga bag'ishlanadi: bir kun tibbiyot, bir kun muhandislik, bir kun IT, bir kun san'at. Har kuni o'sha soha kasb egasini maktabga taklif qilaman — jonli hikoya kitobdan kuchliroq ta'sir qiladi. Bundan tashqari mahorat darslari, korxonaga ekskursiya va kasbga oid film namoyishini tashkil etaman.\nHaftaning yakuniy kunida o'quvchilar \"Men kim bo'laman?\" loyihasini taqdim etadi — har biri o'zi orzu qilgan kasbni taqdimot yoki sahna ko'rinishida namoyish etadi.\nTadbirdan so'ng o'quvchilar bilan kichik suhbat o'tkazaman: \"Nima yoqdi? Qaysi kasb seni qiziqtirdi?\" So'ng natijani har bir o'quvchining \"Ijtimoiy portfolio\"siga kiritaman.",
+        keys: ["har kun — bir soha", "kasb egasi jonli hikoya", "mahorat darsi/ekskursiya/film", "Men kim bo'laman? loyiha", "Ijtimoiy portfolioga kiritish"]
+      },
+      {
+        q: "21c. Kasb tanlashda ota-onalar bilan qanday ishlaysiz?",
+        a: "Kasb tanlashda ota-ona — mening eng muhim hamkorim, lekin ba'zan eng katta qiyinchilik ham aynan shu yerdan kelib chiqadi. Shuning uchun men ota-ona bilan tizimli ishlayman.\nAvval ota-onalar yig'ilishini tashkil etaman va ularga bugungi mehnat bozorini, talabgir kasblarni tushuntiraman. Ko'p ota-ona kasb haqida eski tasavvurda bo'ladi — men ularga zamon o'zgarganini dalil bilan ko'rsataman.\nSo'ng eng asosiy g'oyani yetkazaman: kasbni ota-ona xohishi yoki moda emas, bolaning qobiliyati va qiziqishi asosida tanlash kerak. Buning uchun psixologik diagnostika natijalarini har bir ota-ona bilan alohida muhokama qilaman.\nAgar bolaning qiziqishi ota-onaning xohishiga zid bo'lsa, men hech kimni ayblamayman. Test natijalarini dalil sifatida ko'rsataman va psixolog ishtirokida uch tomon — o'quvchi, ota-ona va men — birga kelishuvga erishaman.\nMening tamoyilim oddiy: ota-onaga \"majburlash emas, qo'llab-quvvatlash\" kerakligini tushuntiraman. Chunki sevib tanlangan kasb — umrbod quvonch, majburan tanlangani — umrbod afsus.",
+        keys: ["ota-ona — eng muhim hamkor", "bugungi mehnat bozorini tushuntirish", "qobiliyat+qiziqish asosida", "psixolog+uch tomon kelishuv", "majburlash emas, qo'llab-quvvatlash"]
     ]
   },
 
