@@ -220,7 +220,7 @@ const STUDY_DATA = [
         keys: ["5 usul: kuzatuv/so'rovnoma/test/suhbat/o'quv natijalari", "Holland 6 toifa", "Klimov metodikasi", "psixolog bilan birgalikda", "ota-ona bilan muhokama", "taxmin emas — dalil"]
       },
       {
-        q: "25. \"Mening kelajakdagi kasbim\" dasturi nima?",
+        q: "25. 'Mening kelajakdagi kasbim' dasturi nima?",
         a: "\"Mening kelajakdagi kasbim\" — bu davlatimiz tomonidan o'quvchilarni ongli ravishda kasb-hunarga yo'naltirish maqsadida ishlab chiqilgan uzluksiz ta'lim dasturidir. Uning mohiyati — kasbiy qiziqish va iqtidorni erta aniqlab, bolani to'g'ri yo'lga solishdir.\nDastur yosh bo'yicha tabaqalashtirilgan. Boshlang'ich sinflar va bog'chalarda \"Atrofimizdagi kasblar\", \"Kasblar alifbosi\" kabi kichik dasturlar orqali — o'yin va rolli mashg'ulotlar shaklida — bolada kasblar haqida dastlabki tasavvur uyg'otiladi.\n7–9-sinflarda esa bevosita maslahatchi ishtirokida jiddiy ish boshlanadi: maxsus testlar o'tkaziladi, o'quvchilar korxonalarga ekskursiyaga olib boriladi, turli soha vakillari bilan uchrashuvlar tashkil etiladi. O'quvchilar o'z qiziqishlari asosida mustaqil ishlar va taqdimotlar tayyorlaydi.\nMen bu dastur asosida har bir o'quvchining qiziqishini erta aniqlab, uni akademik ta'lim yoki kasb-hunar yo'nalishiga yo'naltiraman. Bu dasturning eng katta qadri — bolaning kelajagini erta va to'g'ri rejalashtirishga yordam berishidir. Chunki kasb tanlash imtihon arafasida emas, yillar davomida pishib yetiladigan qarordir.",
         keys: ["uzluksiz ta'lim dasturi", "boshlang'ich: Kasblar alifbosi", "7-9-sinf: test/ekskursiya/uchrashuv/taqdimot", "akademik yoki kasb-hunarga", "kasb tanlash — yillar davomida pishadi"]
       },
@@ -245,7 +245,7 @@ const STUDY_DATA = [
         keys: ["sinov/mashq imtihoni", "SAT/IELTS/fan olimpiadalari", "stress chidamlilik", "kuchli/zaif tomonlar + individual reja", "deyarli barcha fanlarda"]
       },
       {
-        q: "30. \"Prezident iqtidorli farzandlari\" dasturida nima qilasiz?",
+        q: "30. 'Prezident iqtidorli farzandlari' dasturida nima qilasiz?",
         a: "Bu tashabbus Prezidentimizning 2025-yil 15-maydagi PF-86-son Farmoni asosida amalga oshiriladi. Uning bosh maqsadi — iqtidorli yoshlarni barvaqt aniqlab, ularni global mehnat bozorida raqobatbardosh mutaxassis qilib tarbiyalash, ya'ni mamlakat inson kapitalini boyitish.\nTashabbus uch komponentdan iborat: Milliy dastur, Al-Beruniy nomidagi xalqaro maktab-internat va iqtidorli yoshlarni qo'llab-quvvatlash hamjamiyati.\nMaktab maslahatchisi sifatida mening asosiy vazifam — Milliy dasturni amalga oshirish. Bunda imtihon orqali saralab olingan iqtidorli 9-sinf bitiruvchilari menga biriktiriladi. Men ularni 10–11-sinf davomida maxsus platforma orqali jahon reytingidagi nufuzli universitetlarga — TOP-100 va Ivy League oliygohlarga tayyorlayman.\nBuning uchun ularni kuchli fan o'qituvchilariga biriktiraman, MOCK — ya'ni sinov imtihonlarini tashkil etaman va \"Renessans\" oromgohidagi intensiv kurslarga yo'llayman.\nMaqsadim aniq — o'quvchilarimni nufuzli oliygohlarga grant asosida kirgizish. Chunki bitta iqtidorli o'quvchini dunyo darajasiga olib chiqsam, men nafaqat uning, balki mamlakatim kelajagiga hissa qo'shgan bo'laman.",
         keys: ["PF-86 (15-may 2025)", "3 komponent: Milliy dastur/Al-Beruniy/hamjamiyat", "9-sinf bitiruvchilari", "TOP-100 va Ivy League", "fan o'qituvchisi+MOCK+Renessans", "grant asosida kirgizish"]
       },
@@ -322,7 +322,7 @@ const STUDY_DATA = [
         keys: ["majburiyat emas, madaniyat", "muvaffaqiyat hikoyasi", "media/ijtimoiy tarmoq", "ota-ona bilan ishlash", "individual taklif", "o'zi kelishni istasin"]
       },
       {
-        q: "40. \"Ijtimoiy portfolio\" modulini qanday yuritasiz?",
+        q: "40. 'Ijtimoiy portfolio' modulini qanday yuritasiz?",
         a: "\"Ijtimoiy portfolio\" — bu \"Kelajak\" platformasidagi rasmiy elektron modul bo'lib, o'quvchining qo'shimcha ta'limga jalbini aks ettiradi.\nMen uni shunday yuritaman. Avval har bir o'quvchi uchun platformada shaxsiy profil ochaman. So'ng unga o'quvchining klub va to'garaklarga jalbini, tanlov va tadbirlardagi ishtirokini, yutuqlari va sertifikatlarini tizimli kiritaman. Bu ma'lumotlarni men muntazam yangilab boraman.\nBu modul nima uchun muhim? Chunki u uch vazifani bajaradi. Birinchidan, har bir o'quvchining rivojini kuzatish imkonini beradi. Ikkinchidan, hisobot tayyorlashda asos bo'ladi. Uchinchidan — eng muhimi — o'quvchining oliyohga kirishi, grant olishi va \"Prezident iqtidorli farzandlari\" dasturiga qabul qilinishida kuchli daligiga aylanadi.\nDemak Ijtimoiy portfolio — shunchaki hisobot emas, balki o'quvchining to'rt yillik mehnati saqlanadigan elektron xotira. Men uni puxta yuritsam, o'quvchi maktabni quruq qo'l bilan emas, o'z yutuqlari bilan tugatadi.",
         keys: ["shaxsiy profil", "jalb+ishtirok+yutuq+sertifikat", "3 vazifa: kuzatish/hisobot/dalil", "Prezident iqtidorli farzandlari", "elektron xotira"]
       },
@@ -376,32 +376,32 @@ const STUDY_DATA = [
         keys: ["har klubga mas'ul rahbar", "men — dirijyor", "aniq jadval", "qiziqishga qarab taqsim", "klublarni birlashtirish: Debat+Xorijiy til", "Eco+Raqamli avlod"]
       },
       {
-        q: "90. \"Turon teatr\" tanlovini qanday tashkil qilasiz?",
+        q: "90. 'Turon teatr' tanlovini qanday tashkil qilasiz?",
         a: "Turon teatr — Maktabgacha va maktab ta'limi vazirligi hamda Madaniyat vazirligi hamkorligida o'tkaziladigan teatr tanlovi. U 7–10-sinf o'quvchilaridan, 8 nafargacha jamoadan iborat bo'ladi.\nTanlov uch shartdan iborat. Birinchi shart — \"Bizning maktab\" tanishtiruvi: jamoa o'z maktabini badiiy ko'rinishda taqdim etadi, 6 daqiqa vaqt, 10 ball. Ikkinchi shart — \"Madaniyat va san'at bilimdoni\" savol-javobi: jamoaga 10 ta savol beriladi, 10 ball. Uchinchi shart — \"Teatr-ibratxona\" sahna spektakli: o'quvchilar \"Adabiyot\" darsligidagi asardan parcha sahnalashtiradi, 10 daqiqa, eng yuqori — 30 ball.\nTanlov uch bosqichda o'tadi: mahalliy bosqich martda, hududiy bosqich aprelda, respublika bosqichi iyunda.\nEng quvonarlisi — respublika bosqichida 1-o'rinni egallagan jamoa xorijiy mamlakatga tajriba sayohati bilan taqdirlanadi.\nMen o'quvchilarni bu tanlovga bosqichma-bosqich tayyorlayman: asar tanlash, sahna mahorati, nutq ustida ishlayman. Maqsadim — o'quvchida sahna jasorati, badiiy did va jamoa ruhini shakllantirish.",
         keys: ["7-10-sinf", "8 nafar", "3 shart: tanishtiruv(10)+savol-javob(10)+spektakl(30)", "mart/aprel/iyun", "g'olib — xorijiy sayohat"]
       },
       {
-        q: "91. \"Turon teatr\" tanlovi necha shartdan iborat?",
+        q: "91. 'Turon teatr' tanlovi necha shartdan iborat?",
         a: "\"Turon teatr\" tanlovi uch shartdan iborat — va men o'quvchilarimni har uchalasiga ham alohida tayyorlayman.\nBirinchi shart — \"Bizning maktab\" tanishtiruvi. Jamoa o'z maktabini badiiy, ijodiy ko'rinishda taqdim etadi. Vaqt — 6 daqiqa, baho — 10 ball. Bu shart o'quvchida jamoaviy ijod va maktabga g'ururni shakllantiradi.\nIkkinchi shart — \"Madaniyat va san'at bilimdoni\" savol-javobi. Jamoaga 10 ta savol beriladi, har biri 1 ball — jami 10 ball, vaqt 5 daqiqa. Bu shart adabiyot, teatr tarixi va milliy qadriyatlar bo'yicha bilimni sinaydi. Shuning uchun men bu sohani \"Jadidlar izidan\" klubi bilan bog'lab tayyorlayman.\nUchinchi shart — \"Teatr-ibratxona\" sahna spektakli. Bu eng muhim shart — 30 ball. O'quvchilar 5-11-sinf \"Adabiyot\" darsligidagi asardan parcha sahnalashtiradi, vaqt 10 daqiqa. 30 ball bo'lgani uchun bu shartga tayyorgarlikning 60% ini ajrataman: asar tanlash, rol taqsimlash, sahna harakati, nutq va ifodani mashq qilish.\nJami — 50 ball. Tanlov uch bosqichda o'tadi: mahalliy (mart), hududiy (aprel), respublika (iyun). Respublika g'olibi xorijiy mamlakatga sayohat bilan taqdirlanadi — bu o'quvchini ilhomlantiruvchi eng kuchli rag'bat.\n⚠️ Komissiya raqamlarni tekshiradi — 10+10+30=50 ballni ishonch bilan ayting.",
         keys: ["I shart: Bizning maktab — 6 daqiqa, 10 ball", "II shart: Bilimdoni — 10 savol, 10 ball, 5 daqiqa", "III shart: Spektakl — 10 daqiqa, 30 ball", "jami 50 ball", "mart/aprel/iyun", "g'olib — xorijiy sayohat", "60% tayyorgarlik — spektaklga"]
       },
       {
-        q: "92. \"Turon teatr\" o'quvchiga nima beradi?",
+        q: "92. 'Turon teatr' o'quvchiga nima beradi?",
         a: "\"Turon teatr\" — bu shunchaki spektakl emas. U o'quvchiga bir vaqtning o'zida bir necha qimmatli narsani beradi, va men buni har doim ota-onalarga ham tushuntiraman.\nBirinchidan — notiqlik va sahna jasorati. Sahna oldida turaolish — hayotdagi eng katta qo'rquvlardan birini yengish. Bu ko'nikma oliygoh intervyularida, ish suhbatlarida, jamoat oldida gaplashda umr bo'yi kerak bo'ladi.\nIkkinchidan — adabiy did va milliy qadriyatlar. O'quvchi Qodiriy yoki Cho'lpon asaridan parcha sahnalashtirganida — u shu asarni faqat o'qimaydi, balki his qiladi. Bu — kitobxonlikka sevgini uyg'otuvchi eng kuchli usul.\nUchinchidan — jamoada ishlash. Spektaklda har bir rol muhim — biri xato qilsa, jamoa aziyat chekadi. Bu o'quvchiga mas'uliyat va hamkorlikni amalda o'rgatadi.\nTo'rtinchidan — o'ziga ishonch. Uyatchan, o'zini tortib turadigan o'quvchi — sahnadan tushgach, butunlay boshqacha inson bo'lib keladi. Bu o'zgarishni o'z ko'zim bilan ko'rganman.\nBeshinchidan — portfolio va g'olib bo'lsa xorijiy sayohat. Tanlov natijalari \"Ijtimoiy portfolio\"ga kiritiladi va kelajakda oliygoh arizasida kuchli dalil bo'ladi.\nXulosa: Turon teatr — o'quvchini sahnada emas, hayotda yutuvchi qiladi.",
         keys: ["notiqlik — hayotda kerak", "adabiy did — hissiyot orqali", "jamoaviy mas'uliyat", "uyatchan boladan ishonchli insonga", "portfolio + xorijiy sayohat", "sahnada emas, hayotda yutuvchi"]
       },
       {
-        q: "93. \"Raqamli avlod qizlari\" klubini bosqichma-bosqich qanday tashkil qilasiz?",
+        q: "93. 'Raqamli avlod qizlari' klubini bosqichma-bosqich qanday tashkil qilasiz?",
         a: "Raqamli avlod qizlari — qizlarni IT va innovatsiyaga jalb qilishga qaratilgan tanlov. U to'rt yo'nalishni qamrab oladi: Ta'lim, Sun'iy intellekt, Iqlim o'zgarishi va Yashil iqtisodiyot.\nIkki yosh toifasi bor: 16–20 yosh va 21–30 yosh. Ishtirokchilar yakka yoki 2 nafargacha jamoa bo'lib qatnashadi, loyihani 3–5 daqiqada, 12 sahifagacha taqdimotda himoya qiladi.\nBallarga e'tibor: tuman bosqichida tanlov 75 ballik tizimda, viloyat va respublika bosqichlarida esa 70 ballik tizimda baholanadi. Tuman bosqichidan eng yaxshi 5 ta loyiha viloyatga, viloyatdan 3 ta loyiha respublikaga o'tadi.\nKlubni men bosqichma-bosqich tashkil etaman: avval InfoWeek va plakatlar orqali targ'ibot qilaman, so'ng a'zolar va koordinator bilan reja tuzaman. IT-Park rezidentlari va sohada muvaffaqiyatga erishgan ayollarni taklif qilib, mahorat darslari o'tkazaman. So'ng qizlarga real loyiha — startap tayyorlashda yordam beraman va ularni tuman bosqichidan respublikagacha olib chiqaman.\nG'olib qizlar \"Chet el ta'lim sayohati\" va grant bilan taqdirlanadi. Maqsadim — qizlarning g'oyasini real mahsulot yoki xizmatga aylantirish.",
         keys: ["4 yo'nalish: Ta'lim/AI/Iqlim/Yashil iqtisodiyot", "16-20 / 21-30 yosh", "75 ball (tuman) / 70 ball (viloyat+respublika)", "5 loyiha viloyatga / 3 ta respublikaga", "g'olib — chet el + grant"]
       },
       {
-        q: "94. \"Raqamli avlod qizlari\" tanlovi qaysi yo'nalishlarni qamrab oladi?",
+        q: "94. 'Raqamli avlod qizlari' tanlovi qaysi yo'nalishlarni qamrab oladi?",
         a: "\"Raqamli avlod qizlari\" tanlovi to'rtta dolzarb yo'nalishni qamrab oladi — va har biri bugungi dunyo muammolariga bevosita javob beradi.\nBirinchi yo'nalish — Ta'lim. Raqamli texnologiyalar yordamida ta'limni yangilash loyihalari. Masalan, qishloqdagi maktab uchun onlayn o'qitish platformasi.\nIkkinchi yo'nalish — Sun'iy intellekt. AI asosidagi mahsulot yoki xizmat yaratish. Masalan, o'zbek tilidagi chatbot, rasm tahlil qiluvchi ilova.\nUchinchi yo'nalish — Iqlim o'zgarishi. Ekologik muammolarga texnologik yechim. Masalan, suvni tejash sensorlari, aqlli qishloq xo'jaligi.\nTo'rtinchi yo'nalish — Yashil iqtisodiyot. Qayta tiklanadigan energiya, chiqindilarni qayta ishlash, barqaror iqtisodiy modellar.\nIkki yosh toifasi bor: 16–20 yosh va 21–30 yosh. Ishtirokchilar yakka yoki 2 nafargacha jamoa bo'lib qatnashadi. Loyihani 3–5 daqiqada, 12 sahifagacha taqdimotda himoya qiladi. Ro'yxatdan o'tish — qizlar.raqamliavlod.uz saytida.\nMen o'quvchilarimga shuni uqtiraman: eng kuchli loyiha — real muammoga real yechim taklif qiladigan. O'ylangan emas — sinab ko'rilgan.",
         keys: ["4 yo'nalish: Ta'lim/AI/Iqlim/Yashil iqtisodiyot", "16-20 yosh va 21-30 yosh", "yakka yoki 2 nafar jamoa", "3-5 daqiqa himoya, 12 sahifa", "qizlar.raqamliavlod.uz", "real muammoga real yechim"]
       },
       {
-        q: "95. \"Raqamli avlod qizlari\" tanlovi necha bosqichda va qanday baholanadi?",
+        q: "95. 'Raqamli avlod qizlari' tanlovi necha bosqichda va qanday baholanadi?",
         a: "Tanlov uch bosqichda o'tadi — va men o'quvchilarimni birinchi bosqichdan respublikagacha olib chiqishni maqsad qilaman.\nBirinchi bosqich — tuman/shahar (kuzgi ta'tilga to'g'ri keladi). Eng yaxshi 5 ta loyiha viloyatga o'tadi.\nIkkinchi bosqich — viloyat (qishki ta'tilga to'g'ri keladi). Eng yaxshi 3 ta loyiha respublikaga o'tadi.\nUchinchi bosqich — respublika. G'oliblar «Chet el ta'lim sayohati» va ixtisoslik bo'yicha OTMga grant asosida kirish imkonini oladi.\nBallar tizimi: tuman bosqichida 75 ball, viloyat va respublika bosqichlarida 70 ball.\nTuman bosqichida baholash mezonlari: yo'nalishga moslik — 10 ball, loyiha taqdimoti — 25 ball, innovatsionlik — 20 ball, kutilayotgan natija — 20 ball. Jami 75.\nHimoya tartibi: 3–5 daqiqa gapirish, taqdimot 12 sahifadan oshmasligi kerak.\n⚠️ Komissiya raqamlarni sinaydi — 10+25+20+20=75 formulasini ishonch bilan ayting. Bu raqamlarni bilish — siz tanlovni ichidan bilishingizni ko'rsatadi va komissiyada kuchli taassurot qoldiradi.",
         keys: ["3 bosqich: tuman/viloyat/respublika", "tuman: 75 ball (10+25+20+20)", "viloyat+respublika: 70 ball", "5 ta → viloyat, 3 ta → respublika", "himoya 3-5 daqiqa, 12 sahifa", "g'olib — chet el + OTM granti"]
       },
@@ -411,7 +411,7 @@ const STUDY_DATA = [
         keys: ["stereotipni faktlar bilan sindirish", "Canva/chatbot/veb-sahifa — ko'rinadigan loyiha", "men o'zim o'rgataman — TATU bitiruvchisi", "sertifikat/ta'rif/IT-Park ekskursiyasi", "Raqamli avlod qizlari tanloviga tayyorlash", "g'oya → real mahsulot"]
       },
       {
-        q: "97. \"Iqtidor ansambli\" tanlovini qanday tashkil qilasiz?",
+        q: "97. 'Iqtidor ansambli' tanlovini qanday tashkil qilasiz?",
         a: "\"Iqtidor ansambli\" — milliy cholg'u asboblari ijrosi bo'yicha respublika tanlovi. Men uni tashkil etishda musiqa o'qituvchisi bilan yonma-yon ishlayman.\nIshtirokchilar: 6-10-sinf o'quvchilari (11-16 yosh), jamoa 5-8 nafardan iborat bo'lishi kerak.\nTanlov uch bosqichda: tuman (aprel, 2 asar), hududiy (may, 2 asar), respublika (iyun, 3 asar).\nTayyorgarlik jarayoni: Avval musiqa o'qituvchisi bilan iqtidorlilarni aniqlaymiz — dars paytidagi kuzatuv va kichik auditsiya orqali. So'ng jamoa tarkibini shakllantiramiz, asar tanlaymiz va mashqlarga joyni tayyorlaymiz. Har mashqda men ishtirok etmayman — bu mutaxassisning ishi. Lekin rag'bat, logistika va hujjatlarni men boshqaraman.\nMuhim texnik talablar: faqat jonli ijro — audio fonogramma qat'iyan taqiqlanadi; qo'shiq ijro etilmaydi, faqat milliy cholg'u; chiqish vaqti 6 daqiqagacha.\nBaholash 40 ball: ijro mahorati, ansambl uyg'unligi, milliy cholg'ulardan foydalanish, sahna madaniyati, musiqiy savodxonlik va badiiy talqin.\nRespublika g'olibi xorijiy davlatga ta'lim sayohatini qo'lga kiritadi.\nMen bu tanlovni faqat musiqiy yutuq emas — o'quvchida milliy san'atga muhabbat, jamoaviylik va sahna madaniyatini shakllantiruvchi tarbiyaviy vosita sifatida ko'raman.",
         keys: ["6-10-sinf (11-16 yosh), 5-8 nafar", "tuman(aprel)/hududiy(may)/respublika(iyun)", "jonli ijro — fonogramma taqiq", "6 daqiqa, 40 ball", "g'olib — xorijiy sayohat", "musiqa o'qituvchisi bilan hamkorlik", "tarbiyaviy vosita — milliy san'at sevgisi"]
       },
@@ -426,32 +426,32 @@ const STUDY_DATA = [
         keys: ["milliy san'at — ajdodlar tili", "jamoaviy uyg'unlik — mas'uliyat o'quvi", "mashq madaniyati — mehnat meva beradi", "sahna jasorati — hayotda asqotadi", "Prezident iqtidorli farzandlari yo'li", "milliy ildiz + jamoaviy ruh + sabr + jasorat"]
       },
       {
-        q: "100. \"O'quvchilar kengashi\"ni qanday tashkil qilasiz?",
+        q: "100. 'O'quvchilar kengashi'ni qanday tashkil qilasiz?",
         a: "O'quvchilar kengashi — bu o'quvchilarning o'zini-o'zi boshqarish organi, liderlik va yumshoq ko'nikmalarni shakllantiruvchi maktab.\nMen uni demokratik saylov orqali tashkil etaman. Bu jarayonning o'zi tarbiya — nomzodlar o'z dasturini taqdim etadi, o'quvchilar ovoz beradi. Shunda o'quvchi yoshligidanoq saylov, mas'uliyat va fuqarolik tushunchasini amalda o'rganadi.\nKengash tuzilgach, men ular bilan muntazam seminar va treninglar o'tkazaman, tashabbuslarini qo'llab-quvvatlayman, faoliyatini media va ijtimoiy tarmoqlarda yoritaman. Ularga maktab tadbirlarini o'zlari tashkil qilishni topshiraman — chunki liderlik faqat amaliyotda pishadi.\nEng muhimi — men \"lider yo'q\" degan sinfga ishonmayman. Har bir bolada liderlik salohiyati bor, faqat u ochilmagan bo'lishi mumkin. Shuning uchun passiv o'quvchilarga ham kichik mas'uliyat berib, navbatma-navbat rahbarlik qildiraman.\nMaqsadim — o'quvchilar maktabning shunchaki \"ishtirokchisi\" emas, balki egasi ekanini his qilishi. Liderlik — tug'ma emas, tarbiyalanadigan ko'nikma.",
         keys: ["o'zini-o'zi boshqarish", "demokratik saylov", "seminar/trening", "9 kishilik stol", "lider yo'q sinf bo'lmaydi", "liderlik — tarbiyalanadigan ko'nikma"]
       },
       {
-        q: "101. \"Debat\" klubi o'quvchiga qanday foyda beradi?",
+        q: "101. 'Debat' klubi o'quvchiga qanday foyda beradi?",
         a: "Bu ikki klub bir-birini to'ldiradi, shuning uchun men ularni ko'pincha birga olib boraman.\nDebat klubi o'quvchiga eng zarur soft skillsni beradi: tanqidiy va mustaqil fikrlash, notiqlik, o'z fikrini dalil bilan asoslash, raqibni hurmat qilish va tez qaror qabul qilish. Mexanizmi oddiy — bitta tezis atrofida ikki jamoa, tarafdor va qarshi, bahslashadi. Bu ko'nikmalar ayniqsa oliygoh suhbatlarida juda asqotadi.\nXorijiy tillar klubi esa chet tilini, ayniqsa ingliz tilini o'rgatadi, o'quvchini IELTS va TOEFL ga tayyorlaydi. Bugun chet tili — dunyoga ochilgan eshik.\nMen bu ikki klubni birlashtirib, ingliz tilida debat o'tkazaman — shunda o'quvchi bir vaqtda ham tilni, ham fikrlashni mashq qiladi. Speaking club formatida jonli muloqotni rivojlantiraman.\nMaqsadim — o'quvchi nafaqat bilimli, balki o'z fikrini dadil, dalil bilan va boshqa tillarda ham bayon eta oladigan shaxs bo'lib yetishishi. Bugungi dunyoda gapira olmaydigan bilim — yopiq sandiqdagi xazinaga o'xshaydi.",
         keys: ["tanqidiy fikrlash, notiqlik", "dalil bilan asoslash", "ingliz tilida debat", "IELTS/TOEFL", "gapira olmaydigan bilim — yopiq sandiq"]
       },
       {
-        q: "102. \"Xorijiy tillar\" klubini qanday tashkil qilasiz?",
+        q: "102. 'Xorijiy tillar' klubini qanday tashkil qilasiz?",
         a: "\"Xorijiy tillar\" klubi — bu darslikdan emas, hayotdan til o'rgatadigan maydon. Men uni an'anaviy darsdan tubdan farqli formatda olib boraman.\nTuzilishi: haftada 2 marta, darsdan tashqari vaqtda, 45-60 daqiqa. A'zolar qiziqishlari bo'yicha guruhlanadi: ingliz tili, nemis tili, koreys tili (K-pop qiziquvchilar uchun — bu ham jalb usuli).\nFormat — Speaking club. Har mashg'ulot muayyan mavzu atrofida quriladi: «Mening kelajak kasbim» (inglizcha), «O'zbekiston tarixi» (inglizcha), «Texnologiya va jamiyat» (inglizcha). Grammatika emas — so'zlashish.\nQiziqarli elementlar: ingliz tilida kino muhokamasi (film ko'rib, keyin muhokama); intellektual o'yinlar — Alias, Taboo, Mafia (bu o'yinlarda faqat inglizcha gaplashiladi); debat — «Iqtidor ansambli» klubi bilan birlashib, ingliz tilida debat o'tkazaman.\nNima uchun bu muhim? Chunki IELTS va TOEFL — bu faqat grammatika emas, balki tez va ravon so'zlasha olish. Klub ana shuni beradi.\nMen klubni IELTS/CEFR sertifikatiga tayyorgarlik bilan bog'layman — sertifikat «Prezident iqtidorli farzandlari» va xorijiy oliygohlarga kirishda muhim hujjat.\nMaqsadim — o'quvchida tilga nisbatan qo'rquv emas, erkin va ishonchli muloqot madaniyatini shakllantirish. Chunki kelajakda chet tili — imkoniyat eshigi.",
         keys: ["haftada 2 marta", "Speaking club — grammatika emas, so'zlashish", "kino muhokamasi / Alias / Mafia", "Iqtidor ansambli bilan inglizcha debat", "IELTS/TOEFL tayyorgarlik", "CEFR sertifikati — xorijiy oliygohlarga kalit", "qo'rquv emas — erkin muloqot"]
       },
       {
-        q: "103. \"Jadidlar izidan\" klubida nima qilasiz?",
+        q: "103. 'Jadidlar izidan' klubida nima qilasiz?",
         a: "Jadidlar izidan — kitobxonlik, milliy tarix va ma'naviyatni rivojlantiruvchi klub. Uning o'zagida milliy uyg'onish davrining sakkiz buyuk allomasi turadi.\nBular: Mahmudxo'ja Behbudiy, Abdulhamid Cho'lpon, Abdurauf Fitrat, Abdulla Avloniy, Abdulla Qodiriy, Munavvar qori Abdurashidxonov, Is'hoqxon Ibrat va G'ulom Zafariy. Ular — millatni uyg'otish va ma'rifat uchun jonini fido qilgan fidoyilar.\nKlubda men o'quvchilarni ularning asarlarini o'rganishga yo'naltiraman. Behbudiy va Avloniydan — ilm-ma'rifatga intilishni, Cho'lpon va Fitratdan — vatanparvarlik va milliy o'zlikni, Qodiriydan — mustaqil fikrlash va adabiy didni o'rgataman.\nKlub faoliyatini test, asar tahlili, erkin fikr va insho shartlari orqali olib boraman, o'quvchilarni kitobxonlikka jalb qilaman.\nMaqsadim — o'quvchida fidoyilik, ma'rifatparvarlik va vatanparvarlik fazilatlarini shakllantirish. Chunki ildizini bilgan inson — mustahkam shaxs bo'ladi. O'quvchi ajdodlari kim bo'lganini bilsa, o'zi kim ekanini ham anglaydi.",
         keys: ["8 alloma", "Behbudiy/Avloniy — ilm", "Cho'lpon/Fitrat — vatanparvarlik", "Qodiriy — mustaqil fikrlash", "ildizini bilgan — mustahkam shaxs"]
       },
       {
-        q: "104. \"Eco-schools\" klubi va alohida ta'lim ehtiyojli bolalar uchun nima qilasiz?",
+        q: "104. 'Eco-schools' klubi va alohida ta'lim ehtiyojli bolalar uchun nima qilasiz?",
         a: "Bu ikki klub o'quvchining ikki xil qirrasini ochadi — biri ijodini, biri mas'uliyatini.\nEco-schools — ekologik madaniyatni shakllantiruvchi klub. Bunda amaliy ishlar ustun: ko'kalamzorlashtirish, daraxt ekish, chiqindilarni qayta ishlash, suv va energiya tejash, maktab hududini obodonlashtirish. Klub faoliyatini men aniq bosqichda olib boraman: muammoni aniqlash → eko-kengash tuzish → reja → amaliy harakat → natijani yoritish.\nEng qiziqji — Eco-schools a'zolarini Raqamli avlod qizlaridagi \"Iqlim o'zgarishi\" va \"Yashil iqtisodiyot\" yo'nalishlariga jalb qilaman, shunda ekologik g'oya real loyihaga aylanadi.\nAlohida ta'lim ehtiyojli bolalar uchun men inklyuziv to'garaklar yo'lga qo'yaman. Bunda tamoyilim aniq: bolaning nuqsoniga emas, imkoniyatiga qarayman. Psixolog va ota-ona bilan birgalikda bolaning imkoniyatini aniqlab, unga mos faoliyatni tanlayman — IT, shaxmat, art-terapiya. Tengdoshlari orasidan \"Buddy\" (ko'ngilli do'st) tizimini joriy etaman.\nMaqsadim — har bola jamoaning to'laqonli a'zosi bo'lishi. Chunki o'zi ekkan daraxtni bola asraydi — tabiatni sevgan bola esa rahmdil va mas'uliyatli inson bo'lib yetishadi.",
         keys: ["Eco: ko'kalamzor/recycling/tejash", "5 bosqich: muammo → kengash → reja → harakat → yoritish", "Raqamli avlod qizlari bog'lanish", "inklyuziv: IT/shaxmat/art-terapiya", "Buddy tizimi", "nuqsonga emas, imkoniyatga"]
       },
       {
-        q: "105. \"Zakovat\" intellektual klubini tashkil etish va OAVda yoritish",
+        q: "105. 'Zakovat' intellektual klubini tashkil etish va OAVda yoritish",
         a: "Zakovat — bilim, mantiqiy fikrlash va tezkorlikni rivojlantiruvchi intellektual klub.\nMen uni shunday tashkil etaman: o'quvchilarni 3–6 kishilik jamoalarga bo'laman va intellektual o'yin formatini quraman. Turli sohalardan — tarix, fan, adabiyot, mantiqdan — savollar tayyorlayman. Muntazam mashg'ulotlar o'tkazib, sinflararo va maktablararo turnirlar uyushtiraman, g'oliblarni rag'batlantiraman.\nOAVda yoritish masalasi. Bilim va iqtidorni ommalashtirish — boshqa o'quvchilarni ham ilhomlantirish demakdir. Buni men shunday qilaman: o'yin jarayonini sifatli suratga va videoga olaman, undan qiziqarli lavhalar, reels va postlar tayyorlayman. Bularni maktabning rasmiy sahifalarida maxsus heshteg bilan joylashtiraman, ishtirokchilarni teglab e'tibor jalb qilaman. Imkon bo'lsa, mahalliy televideniye bilan hamkorlik qilaman.\nMaqsadim — Zakovat orqali o'quvchilarda jamoaviy fikrlash, tezkor qaror va keng dunyoqarashni shakllantirish, bu o'yinni esa butun maktab faxrlanadigan brendga aylantirish. Chunki bilim ko'rsatilsa — boshqalarga ham yuqadi.",
         keys: ["3-6 kishilik jamoa", "turli soha savollar", "sinflararo/maktablararo turnir", "reels/postlar/heshteg", "mahalliy televideniye", "bilim ko'rsatilsa — boshqalarga yuqadi"]
       },
@@ -461,7 +461,7 @@ const STUDY_DATA = [
         keys: ["tashkiliy guruh", "atlas defil/qo'shiq-raqs/ko'rgazma", "maktab zali + o'z liboslar", "ota-onalar jalb", "sahna — o'quvchilar o'zi", "ijtimoiy tarmoq heshteg"]
       },
       {
-        q: "107. \"Zukko / Eng yosh kitobxon\" tanlovini qanday tashkil qilasiz?",
+        q: "107. 'Zukko / Eng yosh kitobxon' tanlovini qanday tashkil qilasiz?",
         a: "Bu tanlov kitobxonlikni zavqli musobaqaga aylantiradigan eng yaxshi vosita.\nMen uni shunday o'tkazaman. Avval nizom va tavsiya etiladigan kitoblar ro'yxatini tuzaman, o'quvchilarga oldindan e'lon qilaman. So'ng o'quvchilar belgilangan kitoblarni o'qiydi. Tanlov bir necha shart asosida bo'ladi: kitob mazmuni bo'yicha savol-javob, asar tahlili va erkin fikr bayoni. Hakamlar baholaydi, tanlov bosqichma-bosqich o'tadi va g'oliblar rag'batlantiriladi.\nNatijalarni media va ijtimoiy tarmoqlarda yoritib, kitobxonlikni ommalashtiryaman.\nBu tanlovni men Jadidlar izidan klubi bilan bog'layman — chunki ikkalasi ham kitobxonlik va milliy ma'naviyatni rivojlantiradi.\nMaqsadim — kitobni majburiyat emas, zavqli odatga aylantirish. Chunki bola kitobni majburan emas, sevib o'qiganda, u nafaqat bilim, balki tafakkur va tasavvur ham orttiradi. Ko'p o'qigan o'quvchi — chuqur o'ylaydigan inson bo'lib yetishadi.",
         keys: ["kitoblar ro'yxati oldindan", "savol-javob/asar tahlili/erkin fikr", "bosqichma-bosqich", "Jadidlar izidan bilan bog'lash", "kitob — majburiyat emas, zavqli odat"]
       },
@@ -500,7 +500,7 @@ const STUDY_DATA = [
         keys: ["davlat tili — birlik ko'prigi", "ertak/doston/maqol", "har kuni bitta so'z", "til olimpiadasi", "o'zim o'rnak", "tilini asragan — o'zligini asraydi"]
       },
       {
-        q: "47. \"O'zbekistonlik\" tuyg'usini shakllantirishda maktabning roli?",
+        q: "47. 'O'zbekistonlik' tuyg'usini shakllantirishda maktabning roli?",
         a: "Maktab — \"o'zbekistonlik\" tuyg'usi shakllanadigan asosiy o'choq va poydevor. Chunki bola o'z o'zligini aynan maktab yillarida anglab yetadi.\nMaktab buni bir necha yo'l bilan amalga oshiradi. Birinchidan, milliy tarix, ona tili va adabiyotni chuqur o'rgatish — Navoiy, Qodiriy, Amir Temur, Mirzo Ulug'bek orqali o'quvchi o'z xalqining buyukligini his qiladi. Ikkinchidan, milliy qadriyatlar va an'analar — Navro'z kabi bayramlar orqali. Uchinchidan, davlat ramzlari va vatanparvarlik tadbirlari. To'rtinchidan, \"Jadidlar izidan\" klubi va kitobxonlik orqali ajdodlar merosi.\nMaslahatchi sifatida men bu jarayonni faollashtiraman — o'quvchida o'z yurtiga mansubllik, g'urur va daxldorlik tuyg'usini uyg'otaman.\nMaqsadim — o'quvchi o'zini davlatning shunchaki fuqarosi emas, balki uning faol, daxldor va mas'ul a'zosi deb his qilishi. Chunki \"o'zbekistonlik\" — bu pasportdagi yozuv emas, qalbdagi tuyg'udir.",
         keys: ["asosiy o'choq", "Navoiy/Qodiriy/Temur/Ulug'bek", "Navro'z", "Jadidlar izidan", "pasportdagi yozuv emas, qalbdagi tuyg'u"]
       },
@@ -545,7 +545,7 @@ const STUDY_DATA = [
         keys: ["8 alloma", "Behbudiy/Avloniy — ilm", "Cho'lpon/Fitrat — vatanparvarlik", "Qodiriy — tanqidiy fikr", "millatni bilim yuksaltiradi"]
       },
       {
-        q: "56. O'quvchilarga \"O'zbekiston fuqarosi\" tushunchasini qanday singdirasiz?",
+        q: "56. O'quvchilarga 'O'zbekiston fuqarosi' tushunchasini qanday singdirasiz?",
         a: "\"O'zbekiston fuqarosi\" — bu shunchaki pasportdagi yozuv emas, balki mas'uliyat, g'urur va daxldorlik tuyg'usi. Men buni o'quvchida uch qatlam orqali shakllantiraman.\nBirinchi qatlam — bilim orqali. O'quvchi o'z davlati haqida bilmasa — uni seviolmaydi. Shuning uchun Konstitutsiya asosida fuqaroning huquq va burchlarini sodda, real misollar bilan tushuntiraman. \"Mening huquqim va burchim\" davra suhbatlarini o'tkazaman — bu nazariya emas, hayotiy dialog.\nIkkinchi qatlam — amaliyot orqali. Fuqarolik — kuzatuvchilik emas, ishtirok. Shuning uchun o'quvchilarni \"O'quvchilar kengashi\" saylovlariga, volontyorlik aksiyalariga, mahalla obodonlashtirishga jalb qilaman. Bolaga \"sen ham bu davlatni quryapsan\" degan hisni beraman.\nUchinchi qatlam — raqamli fuqarolik. Bu — zamonamizning muhim qo'shimchasi. Internet madaniyati, axborot xavfsizligi, feyk axborotni aniqlash, shaxsiy ma'lumotlarni himoya qilish — bularni TATU bitiruvchisi sifatida men bevosita va ishonchli o'rgata olaman. Chunki bugun fuqarolik nafaqat ko'chada, balki internetda ham namoyon bo'ladi.\nMaqsadim — o'quvchi o'zini davlatning shunchaki kuzatuvchisi emas, balki faol, daxldor va mas'ul a'zosi deb his qilishi. Chunki millatning kuchi — fuqarolarining daxldorlik tuyg'usida.",
         keys: ["3 qatlam: bilim/amaliyot/raqamli fuqarolik", "Konstitutsiya — sodda misollar", "O'quvchilar kengashi + volontyorlik", "internet madaniyati + feyk axborot", "TATU — raqamli fuqarolikni o'rgata olaman", "kuzatuvchi emas, faol a'zo"]
       },
@@ -674,12 +674,12 @@ const STUDY_DATA = [
         keys: ["ijodkorlikka chaqiriq", "maktab zali va o'z resurslar", "ota-ona mutaxassis — bepul yordam", "sahna — o'quvchilar o'zi", "qiymat pulda emas, g'oyada"]
       },
       {
-        q: "79. \"Raqamli avlod qizlari\" klubida o'quvchilar kamayib ketdi?",
+        q: "79. 'Raqamli avlod qizlari' klubida o'quvchilar kamayib ketdi?",
         a: "A'zolar kamayishi — bu menga signal: klub qiziqarli bo'lmay qolgan. Men darhol sababni aniqlayman, chunki muammoni bilmasdan echim topib bo'lmaydi.\nAvval diagnostika. O'quvchilardan so'rayman — nima yoqmadi? Nazariya ko'pmi? Mashg'ulot zerikarli bo'ldimi? Vaqt noqulaymi? Javoblar aniq yo'l ko'rsatadi.\nSabablar odatda shu bo'ladi: nazariya ko'p, amaliyot kam. Shuning uchun men formatni tubdan o'zgartiraman.\nBirinchidan, gamifikatsiya — o'yin elementlari kiritaman. Loyiha uchun ball, liderlar jadval, eng faol a'zoga haftalik sovg'a. Bu raqobat ruhini uyg'otadi.\nIkkinchidan, amaliy chiroyli loyihalar. Nazariya emas — o'z Instagram sahifasini dizayn qilish, oddiy chatbot yaratish, Canva'da plakat tayyorlash. Qiz o'z ko'zi bilan \"Men buni qila olaman\" deganda — qiziqish qaytadi.\nUchinchidan, mehmonga taklif. IT sohasida muvaffaqiyat qozongan ayollarni taklif qilaman. Tengdosh va yaqin hayot misoli — eng kuchli ilhom.\nTo'rtinchidan, ijtimoiy tarmoqda yoritish. Eng faol a'zolarni maktab sahifasida ta'kidlayman — tan olingan o'quvchi qaytadi, boshqalarni ham tortadi.\nMaqsadim — bu klub qizlar o'zlari kelishni istaydigan maydonga aylansin. Majburiy to'garakdan — sevimli joyga.",
         keys: ["diagnostika — sababni aniqlayman", "gamifikatsiya: ball/jadval/sovg'a", "amaliy loyihalar: Instagram/chatbot/Canva", "muvaffaqiyatli IT-ayollar mehmonga", "ijtimoiy tarmoqda yoritish", "majburiy emas — sevimli joy"]
       },
       {
-        q: "80. To'garaklar faqat \"nomiga\" ishlamoqda?",
+        q: "80. To'garaklar faqat 'nomiga' ishlamoqda?",
         a: "Bu — jiddiy va tez hal qilinishi lozim bo'lgan muammo. \"Nomiga\" ishlayotgan to'garak — nafaqat befoyda, balki maktab vaqti va resursini isrof qiladi.\nMen buni sezganda darhol harakat qilaman. Uch sababdan biri odatda bo'ladi: yaxshi rahbar yo'q, mazmun yo'q, yoki motivatsiya yo'q.\nBirinchi qadam — sababni aniqlayman. Rahbar bilan ochiq suhbat qilaman: \"Klub nima uchun rivojlanmayapti?\" Ayblamayman — birgalikda hal qilaman.\nIkkinchi qadam — mazmunni yangilayman. Agar dastur eski va zerikarli bo'lsa — uni butunlay yangilayman. Har mashg'ulot o'quvchiga bitta aniq ko'nikma berishi kerak. \"Bugun o'rgandim\" degan his — kelish uchun sabab.\nUchinchi qadam — malakali rahbar. Zarur bo'lsa, o'sha soha bo'yicha tajribali o'qituvchi yoki tashqi mutaxassisni jalb qilaman.\nTo'rtinchi qadam — to'garakni tanlovga yo'naltiraman. Maqsadi yo'q to'garak — to'xtaydi. Maqsadi bor to'garak — yashaydi. Shuning uchun har to'garakka real tanlov yoki festival maqsadi belgilayman.\nBeshinchi qadam — \"amaliy mahsulot\" talabi. Har oyda men quruq hisobot emas — o'quvchilarning real tayyorlagan mahsuloti ko'rgazmasini talab qilaman. Bu rahbarni ham, o'quvchini ham jonlantiradi.\nMaqsadim — har bir to'garak nafaqat ishlayotgan, balki o'quvchiga haqiqiy qiymat qo'shayotgan bo'lsin.",
         keys: ["3 sabab: rahbar/mazmun/motivatsiya yo'q", "rahbar bilan ochiq suhbat", "har mashg'ulot — bitta ko'nikma", "tanlov/festival maqsadi", "amaliy mahsulot ko'rgazmasi", "haqiqiy qiymat qo'shsin"]
       },
@@ -743,7 +743,7 @@ const STUDY_DATA = [
         keys: ["Konstitutsiya", "Ta'lim to'g'risida qonun", "Kelajak ustavi"]
       },
       {
-        q: "\"Kelajak\" markazi nima va qaysi yoshdagi bolalarga xizmat qiladi?",
+        q: "'Kelajak' markazi nima va qaysi yoshdagi bolalarga xizmat qiladi?",
         a: "\"Kelajak\" markazi — 6 yoshdan 18 yoshgacha bo'lgan bolalarga qo'shimcha ta'lim xizmatlarini ko'rsatuvchi davlat muassasasi, yuridik shaxs maqomiga ega. Bolalarning bo'sh vaqtini mazmunli tashkil etish hamda ularning ilmiy, texnik, ijodiy va sport salohiyatini ro'yobga chiqarishga xizmat qiladi.",
         keys: ["6-18 yosh", "davlat muassasasi", "yuridik shaxs"]
       },
@@ -783,7 +783,7 @@ const STUDY_DATA = [
         keys: ["Science, Technology, Engineering, Art, Mathematics", "yaxlit ijodiy fikrlash"]
       },
       {
-        q: "\"Ijtimoiy-emotsional ta'lim\" modeli necha bosqichda amalga oshiriladi?",
+        q: "'Ijtimoiy-emotsional ta'lim' modeli necha bosqichda amalga oshiriladi?",
         a: "To'rt bosqichda: maktabgacha ta'lim, boshlang'ich ta'lim, tayanch o'rta va o'rta ta'lim. Maqsadi — bolada yetakchilik, jamoada ishlash, faol fuqarolik va kommunikativ ko'nikmalarni bosqichma-bosqich, yoshiga mos ravishda rivojlantirish.",
         keys: ["4 bosqich", "maktabgacha-boshlang'ich-tayanch o'rta-o'rta"]
       },
@@ -798,7 +798,7 @@ const STUDY_DATA = [
         keys: ["maktab ish rejasiga kiritiladi", "maktab moliyalashtiradi"]
       },
       {
-        q: "\"Kelajak\" markazlarini qo'llab-quvvatlash Jamg'armasi qanday shakllanadi?",
+        q: "'Kelajak' markazlarini qo'llab-quvvatlash Jamg'armasi qanday shakllanadi?",
         a: "Bir necha manbadan: Davlat budjetidan har yili 70 milliard so'm; ota-onalar badali to'lovining 10 foizi; homiylik xayriyalari hamda xalqaro grantlar. Jamg'armaga tushgan mablag'ning kamida 40 foizi moddiy-texnika bazasini mustahkamlashga sarflanadi.",
         keys: ["70 mlrd so'm/yil", "to'lovning 10%", "kamida 40% moddiy-texnika"]
       },
@@ -822,7 +822,7 @@ const STUDY_DATA = [
         keys: ["PQ-277 (08.09.2025)", "776-son (10.12.2025)"]
       },
       {
-        q: "\"Kelajak\" markazi va shtat",
+        q: "'Kelajak' markazi va shtat",
         a: "6-18 yosh, davlat muassasasi, yuridik shaxs. Shtat: 300 nafargacha — 0,5 birlik; 301 va undan ortiq — 1,0 birlik. Maosh: direktor o'rinbosariga teng; sertifikat bilan +30% (2026-yil 1-sentabrdan).",
         keys: ["6-18 yosh", "0,5 / 1,0 birlik", "+30% ustama"]
       },
