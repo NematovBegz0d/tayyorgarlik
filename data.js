@@ -501,6 +501,11 @@ const STUDY_DATA = [
         q: "60. Sport va sog'lom turmush tarzini qanday targ'ib qilasiz?",
         a: "Sport va sog'lom turmushni esa sport musobaqalari va to'garaklar (futbol, voleybol, shaxmat), sog'liq kunlari, jismoniy faollik odatini shakllantirish orqali targ'ib qilaman. Zararli odatlardan ogohlantiram.\nMening qarashim shu: barkamol avlod — bu faqat bilimli emas, balki estetik didli, jismonan sog'lom va ruhan barqaror insondir. Sog' tanda — sog' aql, go'zallikni tushungan qalbda esa — ezgulik yashaydi.",
         keys: ["futbol/voleybol/shaxmat", "sog'liq kunlari", "zararli odatlardan ogohlantirish", "sog' tanda — sog' aql"]
+      },
+      {
+        q: "61. Ijtimoiy soha xodimi qanday xususiyatga ega bo'lishi kerak?",
+        a: "Ijtimoiy soha xodimi — bu insonlar bilan, ayniqsa bolalar bilan ishlaydigan inson, shuning uchun unda maxsus fazilatlar bo'lishi shart.\nBirinchisi — empatiya, ya'ni hamdardlik: o'zganing holatini tushuna bilish. Ikkinchisi — muloqot va faol tinglash: o'z fikrini aniq bayon etish va boshqalarni eshita bilish. Uchinchisi — sabr va bag'rikenglik: har xil inson bilan til topa olish. To'rtinchisi — mas'uliyat va halollik, shu jumladan maxfiylik — insonning sirini saqlash. Beshinchisi — psixologik barqarorlik: qiyin vaziyatda o'zini yo'qotmaslik. Oltinchisi — xolislik: hech kimni ajratmay, adolatli bo'lish.\nMen bu fazilatlarni eng muhim deb bilaman, chunki ijtimoiy sohada bilim yetarli emas — bilimni qanday yetkazish, insonga qanday munosabatda bo'lish ham muhim.\nMening qarashim shu: hard skills — \"nima qila olishing\", soft skills — \"qanday qila olishing\". Ijtimoiy sohada esa aynan \"qanday\"i hal qiluvchi. Chunki biz inson qalbi bilan ishlaymiz — bu esa eng nozik va eng mas'uliyatli ishdir.",
+        keys: ["empatiya", "muloqot va faol tinglash", "sabr va bag'rikenglik", "maxfiylik", "psixologik barqarorlik", "xolislik", "hard skills vs soft skills", "inson qalbi bilan ishlaymiz"]
       }
     ]
   },
