@@ -518,23 +518,23 @@ const STUDY_DATA = [
     items: [
       {
         q: "61. Bola bir kasbni, ota-ona boshqasini xohlaydi — kimning fikri muhim?",
-        a: "Kelajakda shu kasb bilan yashaydigan shaxs bola bo'lgani uchun, bolaning fikri va qiziqishi muhimroq. Lekin ota-onani rad etmayman. Uchrashuv tashkil etib, bolaning kasbiy test natijalari va portfoliosini ota-onaga ko'rsataman; bola tanlagan kasbning qanchalik istiqbolli va serdaromad ekanini aniq tahlillar bilan tushuntirib, ikki tomonni kelishtiraman.",
-        keys: ["bola fikri muhimroq", "rad etmayman", "test+portfolio", "uch tomon kelishuv"]
+        a: "Bolaning kelajagi haqida gap ketganda, eng muhim omil — bolaning o'z qobiliyati va qiziqishi. Chunki kasbni umr bo'yi bola yashaydi, ota-ona emas.\nLekin men ota-onani hech qachon ayblamayman — ularning xohishi ortida farzand uchun g'amxo'rlik turibdi. Shuning uchun men o'quvchi bilan suhbatlashib, qobiliyatini psixologik test natijalari bilan tasdiqlayman. So'ng ota-onaga bu obyektiv ma'lumotni dalil sifatida ko'rsataman — quruq gap bilan emas.\nAgar ziddiyat saqlansa, psixolog ishtirokida uch tomon — o'quvchi, ota-ona va men — birga o'tirib kelishuvga erishaman.\nMening ishonchim shu: eng yaxshi qaror — bola, ota-ona va maslahatchi birgalikda qabul qilgan qaror. Chunki sevib tanlangan kasb umr bo'yi quvonch, majburan tanlangani esa umr bo'yi afsus bo'ladi.",
+        keys: ["bola fikri muhimroq", "ota-onani ayblamayman", "psixologik test — dalil", "uch tomon kelishuv", "sevib tanlangan — quvonch"]
       },
       {
         q: "62. Qiz grant yutdi, ota-ona qarshi — qanday ko'ndirasiz?",
-        a: "Ota-onani ayblamayman, xavotirini (xavfsizlik, masofa) tushunaman. Universitetning rasmiy xavfsizlik kafolatlari, yotoqxona sharoiti va u yerda o'qiyotgan boshqa o'zbekistonliklar tajribasini ko'rsataman. Grant — qizning kelajagi uchun tarixiy imkoniyat, butun oila va tuman uchun faxr ekanini tushuntiraman.",
-        keys: ["xavotirni tushunish", "xavfsizlik kafolati/yotoqxona", "oila va tuman uchun faxr"]
+        a: "Bu keyslarning hammasi bir mantiqqa bo'ysunadi: qizning intilishini hurmat qilaman, ota-onaning xavotirini esa tushunaman.\nQiz grant yutgan bo'lsa: men ota-onani ayblamayman, xavotirini eshitaman. So'ng faktlarni ko'rsataman — grant qizning o'z mehnati bilan qo'lga kiritilgan imkoniyat, ta'lim esa unga mustaqillik beradi. Ta'limli qiz — ertaga mustahkam oilaning asosi.\nKerak bo'lsa murosa taklif qilaman — yaqin shahardagi oliyoh, doimiy aloqa.\nMen ota-onaga bir gapni aytaman: \"Qizingizni qo'llab-quvvatlasangiz, ertaga u sizning eng katta faxringizga aylanadi.\" Bola orzusi — har doim birinchi o'rinda.",
+        keys: ["xavotirini eshitaman", "grant — o'z mehnati", "ta'limli qiz — mustahkam oila", "murosa taklif", "bola orzusi birinchi"]
       },
       {
         q: "63. Qiz harbiy/model bo'lmoqchi, ota-ona qarshi?",
-        a: "Qizning intilishini hurmat qilaman. Harbiy soha faqat jang maydoni emas — harbiy psixologiya, kiberxavfsizlik, aloqa, tibbiyot, huquqshunoslik ham bor. Model esa — dizayn, brending kabi katta industriya. Ota-onaga real istiqbol va imkoniyatlarni dalil bilan ko'rsatib, xavotirini aritaman.",
-        keys: ["intilishni hurmat", "harbiy — psixologiya/kiber/tibbiyot ham", "dalil bilan"]
+        a: "Qiz harbiy yoki model bo'lmoqchi bo'lsa ham xuddi shunday: qobiliyatini baholayman, ota-onaga bu sohalarning bugungi real imkoniyatlarini dalil bilan tushuntiraman. Masalan, moda — bu dizayn va brending kabi katta industriya; harbiy sohada esa ayollar uchun ham munosib o'rin bor.\nMen ota-onaga bir gapni aytaman: \"Qizingizni qo'llab-quvvatlasangiz, ertaga u sizning eng katta faxringizga aylanadi.\" Bola orzusi — har doim birinchi o'rinda.",
+        keys: ["qobiliyatini baholash", "moda — dizayn va brending", "harbiy — ayollarga ham munosib o'rin", "dalil bilan tushuntirish", "bola orzusi birinchi"]
       },
       {
         q: "64. Bola IT/matematikaga qiziqadi, ota-ona shifokor bo'lishini xohlaydi?",
-        a: "Bu menga juda yaqin keys, IT mutaxassisiman. \"Oltin o'rta\" yechimni taklif qilaman: tibbiyot va IT sintezidagi yangi kasblar — Bioinformatika, Tibbiy kibernetika, sog'liqni saqlashda data analitika. Shunda bolaning matematikaga qiziqishi ham saqlanadi, ota-onaning shifokorlik orzusi ham ushaladi.",
-        keys: ["oltin o'rta", "Bioinformatika/Tibbiy kibernetika", "ikki tomon ham qondiriladi"]
+        a: "Bu — eng nozik keyslardan biri, chunki ikkala tomon ham haq.\nMen avval bolaning matematik qobiliyatini test va o'quv natijalari bilan tasdiqlayman. So'ng ota-onani ayblamasdan, obyektiv ma'lumotni tushuntiraman.\nEndi eng muhim qadam — \"oltin o'rta\"ni topish. Men ota-onaga shuni ko'rsatamanki, matematikaga moyillik bilan ham obro'li, daromadli kasblar bor: data science, sun'iy intellekt, moliya muhandisligi, bioinformatika. Hatto tibbiyot bilan IT birlashgan — tibbiy texnologiya, raqamli diagnostika kabi yangi sohalar mavjud. Demak bolaning qobiliyati ham, ota-onaning orzusi ham bitta nuqtada uchrashishi mumkin.\nPsixolog ishtirokida uch tomon kelishuvga erishaman.\nMening yondashuvim — ziddiyatni g'olib-mag'lubga aylantirmaslik, balki ikkala tomon ham yutadigan yechim topish. Chunki maqsad — kim haqligini isbotlash emas, bolaning baxtli kelajagi.",
+        keys: ["oltin o'rta", "data science/AI/bioinformatika", "tibbiy texnologiya", "uch tomon kelishuv", "g'olib-mag'lub emas, ikki tomon yutadi"]
       },
       {
         q: "65. Yevropa madaniyatiga qiziqadi, ota-ona milliy qadriyat tarafdori?",
@@ -543,33 +543,33 @@ const STUDY_DATA = [
       },
       {
         q: "66. O'quvchi o'qishni ham, kasbni ham xohlamayapti?",
-        a: "\"Qiziqmaydigan bola yo'q, o'z qiziqishini topmagan bola bor.\" Psixolog bilan sababini aniqlayman; \"Haqiqiy hayot hikoyasi\" metodi bilan tumandagi muvaffaqiyatli yoshlarni taklif qilaman; kichik amaliy vazifa berib, birinchi muvaffaqiyat zavqi orqali \"5 yildan keyin kim bo'laman?\" degan ichki savolni uyg'otaman.",
-        keys: ["psixolog+sabab", "Haqiqiy hayot hikoyasi", "5 yildan keyin kim bo'laman?"]
+        a: "Men bir tamoyilga ishonaman: \"qiziqmaydigan bola yo'q — o'z qiziqishini hali topmagan bola bor.\"\nAvval ayblamayman va shoshilmayman. Psixolog bilan birgalikda sababini aniqlayman — bu oilaviy muammomi, o'ziga ishonchsizlikmi, yoki bola shunchaki o'zini topmaganmi?\nSo'ng uni turli faoliyatga jalb qilaman — Turon teatr, Debat, sport, Eco-schools. Maqsad — bolaga turli eshiklarni ko'rsatish, balki biror joyda uning chirog'i yonadi.\nEng muhimi — unga kichik, erishish mumkin bo'lgan vazifa beraman. Birinchi kichik muvaffaqiyat bolada uchqun yoqadi, o'sha uchqundan qiziqish olovi alangalaydi.\nMen sabr bilan, individual yondashaman. Chunki har bir bolada ochilmagan iqtidor bor — uni topish va uyg'otish mening vazifam. Bola loqayd emas — u faqat o'zini hali kashf etmagan.",
+        keys: ["qiziqmaydigan bola yo'q", "psixolog bilan sabab", "turli faoliyatga jalb", "kichik vazifa — uchqun", "bola o'zini kashf etmagan"]
       },
       {
         q: "67. Iqtidorli o'quvchining bilimi pasayib ketdi?",
-        a: "Bu jiddiy signal — hayotida muammo (oila, sog'liq, tengdoshlar bosimi, tushkunlik) bor. Psixolog va sinf rahbari bilan sababini o'rganaman; bosim o'tkazmasdan samimiy suhbatlashaman; muammosini yechishga ko'maklashaman; yangi maqsad va rag'bat berib, so'ngan motivatsiyani qayta tiklayman.",
-        keys: ["jiddiy signal", "psixolog+sabab", "bosimsiz suhbat", "yangi maqsad/rag'bat"]
+        a: "Iqtidorli o'quvchining bilimi pasayishi — bu menga signal: biror narsa noto'g'ri ketyapti.\nMen avval panikaga tushmaymen va ayblamayman. Psixolog bilan birgalikda sababini aniqlayman — bu charchoqmi, oilaviy muammomi, sog'liqmi, motivatsiya pasaygami yoki do'stlar ta'sirimi?\nSababga qarab individual reja tuzaman. Ota-ona bilan ishlayman, kerak bo'lsa yukini yengillashtiraman. So'ng unga yangi maqsad va rag'bat beraman — tanlov, oliyoh orzusi kabi.\nHolatini doimiy kuzatib boraman, har bir kichik yutuqini rag'batlantiraman, toki uning o'ziga ishonchi qaytsin.\nMen buni eng jiddiy vazifalardan biri deb bilaman. Chunki har bir iqtidorli o'quvchi — mamlakatning kelajagi. Bitta iqtidor so'nsa, bu nafaqat bolaning, balki butun jamiyatning yo'qotishi. Shuning uchun men hech bir iqtidorli o'quvchining yo'lda qolib ketishiga yo'l qo'ymayman.",
+        keys: ["signal", "psixolog bilan sabab", "individual reja", "yangi maqsad + rag'bat", "iqtidor — mamlakatning kelajagi"]
       },
       {
         q: "68. Sinfda lider o'quvchi yo'q — qanday lider aniqlaysiz?",
-        a: "\"Lider yo'q\" sinf bo'lmaydi — salohiyat ochilmagan. Sinfga kutilmagan jamoaviy vazifa (keys) tashlayman; shu jarayonda mas'uliyatni zimmasiga olib, jamoani tashkillagan yashirin liderni aniqlayman. \"Hafta sardori\" rotatsion tizimi bilan har bolaga imkon beraman.",
-        keys: ["lider yo'q sinf bo'lmaydi", "kutilmagan jamoaviy vazifa", "Hafta sardori rotatsiya"]
+        a: "Men avvalo bir narsaga ishonaman: \"lider yo'q\" sinf bo'lmaydi — faqat salohiyat ochilmagan bo'ladi.\nLiderni men bir kuzatuvda emas, jarayonda aniqlayman. Birinchidan, turli vaziyatlarda o'quvchilarni kuzataman — kim tashabbus ko'rsatadi, kim jamoani uyushtiradi. Ikkinchidan, har bir o'quvchiga navbatma-navbat kichik vazifa va rol beraman — masalan \"Hafta sardori\" tizimi orqali. Shunda yashirin liderlar o'zini namoyon qiladi. Uchinchidan, liderlik treninglari va o'yinlar o'tkazaman. To'rtinchidan, \"O'quvchilar kengashi\"ni demokratik saylov orqali tashkil etaman.\nEng muhimi — men bitta tayyor lider qidirmayman, balki har bolada liderlik fazilatini rivojlantiraman. Passiv o'quvchini ham kichik mas'uliyatdan boshlab tarbiyalayman.\nChunki liderlik — tug'ma fazilat emas, tarbiyalanadigan ko'nikma. Mening vazifam — uxlab yotgan salohiyatni uyg'otish.",
+        keys: ["lider yo'q sinf bo'lmaydi", "Hafta sardori tizimi", "liderlik treningi", "O'quvchilar kengashi saylov", "liderlik — tarbiyalanadigan ko'nikma"]
       },
       {
         q: "69. O'quvchi bilimli, lekin jamoa oldida gapirishdan qo'rqadi?",
-        a: "\"Kichik qadamlar\" metodi: avval 2-3 yaqin do'sti davrasida, keyin kichik guruh sardori, so'ng \"Debat\" klubiga jalb qilaman. Notiqlik — tug'ma iste'dod emas, rivojlantirsa bo'ladigan ko'nikma ekanini amalda ko'rsataman. Bilim + ishonch = muvaffaqiyat.",
-        keys: ["Kichik qadamlar", "do'st→guruh→Debat", "notiqlik — ko'nikma, tug'ma emas"]
+        a: "Bu — ko'p uchraydigan holat: bola bilimli, lekin auditoriya oldida qotib qoladi. Men buni jiddiy qabul qilaman, chunki bilim qo'rquv ostida ko'milib qolmasligi kerak.\nAvval psixolog bilan qo'rquvning sababini aniqlayman — bu uyatchanlikmi, o'tmishdagi salbiy tajribami, yoki o'ziga ishonchsizlikmi?\nSo'ng bosqichma-bosqich ishonch shakllantiraman: avval kichik guruhda gapirishdan boshlayman, keyin juftlikda, so'ng kattaroq auditoriyada. Uni Debat klubi va notiqlik mashg'ulotlariga jalb qilaman, kichik rollar bilan tadbirlarda qatnashtiram.\nHar bir kichik muvaffaqiyatini maqtab, ijobiy muhit yarataman — kulish yoki mensimaslikka aslo yo'l qo'ymayman.\nMaqsadim — bolada o'ziga ishonch uyg'otish. Chunki bilim va ishonch birlashganda, bu o'quvchi sinfning eng yorqin yulduziga aylanishi mumkin. Bilim — porox, ishonch esa — uchqun; ikkalasi uchrashganda natija portlaydi.",
+        keys: ["psixolog bilan sabab", "bosqichma-bosqich: kichik guruh → juftlik → katta auditoriya", "Debat klubi", "ijobiy muhit", "bilim — porox, ishonch — uchqun"]
       },
       {
         q: "70. O'quvchi shaxsiy manfaatni jamoadan ustun qo'yyapti?",
-        a: "Jamoaviy maqsad qo'yib, birgalikda erishish zavqini his qildiraman; fidoyilik qahramonlari misolini keltiraman; \"O'quvchilar kengashi\" va volontyorlik orqali o'zgalar uchun ishlash tajribasini beraman. \"Men\" emas, \"biz\" deb fikrlash.",
-        keys: ["jamoaviy maqsad", "fidoyilik misoli", "volontyorlik", "men emas, biz"]
+        a: "Bu — tarbiyaviy keys, men uni \"men\"dan \"biz\"ga o'tkazish jarayoni deb ko'raman.\nAvval ayblamayman — bu yoshda o'zini o'ylash tabiiy. Lekin men o'quvchiga jamoada ishlashning qadrini amaliyotda ko'rsataman.\nBirinchidan, jamoaviy maqsad qo'yaman va birgalikda erishish zavqini his qildiraman. Ikkinchidan, jamoa uchun fidoyilik ko'rsatgan qahramonlar misolini keltiraman. Uchinchidan, uni \"O'quvchilar kengashi\" va volontyorlik faoliyatiga jalb qilaman — o'zgalar uchun ishlash tajribasini beraman. To'rtinchidan, jamoaga foyda keltirgan o'quvchini alohida rag'batlantiraman.\nMen o'quvchiga shuni anglataman: shaxsiy manfaat va jamoa manfaati bir-biriga zid emas — aksincha, jamoa yutsa, sen ham yutasan.\nMaqsadim — o'quvchida \"men\" emas, \"biz\" deb fikrlash madaniyatini shakllantirish. Chunki yakka kuch — bir, jamoa kuchi esa son-sanoqsiz.",
+        keys: ["men→biz", "jamoaviy maqsad", "fidoyilik qahramonlari", "O'quvchilar kengashi/volontyorlik", "yakka kuch — bir, jamoa kuchi son-sanoqsiz"]
       },
       {
         q: "71. Optimist va pessimist o'quvchilar bilan qanday ishlaysiz?",
-        a: "Optimist bilan: yuqori energiyasini yirik loyiha va liderlik vazifalariga yo'naltiraman. Pessimist bilan: tanqid qilmasdan, kichik va aniq muvaffaqiyat keltiradigan vazifalar beraman; har yutug'ini rag'batlantirib, xato — qo'rqinchli emas, rivojlanish bosqichi ekanini ko'rsataman.",
-        keys: ["optimist — liderlik/loyiha", "pessimist — kichik muvaffaqiyat", "xato — rivojlanish bosqichi"]
+        a: "Har bir o'quvchi dunyoga o'z ko'zi bilan qaraydi, va men ikkalasiga ham individual yondashaman.\nOptimist o'quvchi — ishonchli, faol, lekin ba'zan haddan tashqari yengiltak bo'lishi, qiyinchilikni kam baholashi mumkin. Men uning ishonchini qo'llab-quvvatlayman, lekin ayni paytda real rejalashtirish va mehnat muhimligini singdiraman — toki orzusi havoyi bo'lib qolmasin.\nPessimist o'quvchi — ehtiyotkor, lekin o'ziga ishonmasligi, har ishdan oldin \"uddalay olmayman\" deyishi mumkin. Men unga kichik muvaffaqiyatlar orqali ishonch beraman, qiyinchilikni yenggan insonlar misolini ko'rsataman, har yutuqini rag'batlantiraman.\nMening yondashuvim — optimistni yerga qaytarish, pessimistni esa yuqoriga ko'tarish. Ikkalasini muvozanatga olib kelish.\nMaqsadim — har ikki o'quvchi ham real, ishonchli va mehnatkash shaxs bo'lib yetishishi. Chunki haqiqiy muvaffaqiyat — orzuga ishonish bilan unga mehnat qilishning birlashuvidir.",
+        keys: ["optimist — real rejalashtirish singdiraman", "pessimist — kichik muvaffaqiyatlar", "optimistni yerga, pessimistni yuqoriga", "muvozanat", "orzuga ishonish + mehnat"]
       },
       {
         q: "72. O'quvchi OTMga kirishdan umidini uzgan?",
@@ -578,23 +578,23 @@ const STUDY_DATA = [
       },
       {
         q: "73. O'qituvchi o'quvchilarni to'garagingizga qo'ymayapti?",
-        a: "Sababni aniqlayman (jadval to'qnashuvi yoki maqsadni tushunmaslik); xushmuomalalik bilan suhbatlashib to'garak foydasini tushuntiraman, jadvalni moslashtiraman; hal bo'lmasa pedagogik kengash va direktor orqali yechim topaman. O'qituvchini g'anim emas, sherik qilaman.",
-        keys: ["sabab", "suhbat+jadval moslash", "pedkengash/direktor", "sherik qilish"]
+        a: "Bu — ko'p uchraydigan ish vaziyati. Men uni ziddiyatga emas, hamkorlikka aylantiraman.\nAvval ayblamayman, sababini aniqlayman — bu jadval to'qnashuvimi, yoki o'qituvchi to'garakning foydasiga ishonmayaptimi?\nSo'ng o'qituvchi bilan xushmuomalalik bilan suhbatlashaman, to'garakning o'quvchi rivojiga foydasini tushuntiraman, jadvalni uning darslariga to'qnash kelmaydigan qilib moslashtiraman.\nAgar masala hal bo'lmasa, men a'zo bo'lgan pedagogik kengash va direktor orqali yechim topaman.\nMening maqsadim — o'qituvchini g'anim emas, sherik qilish. Chunki biz ikkalamiz ham bitta maqsad — o'quvchining rivoji uchun ishlaymiz. O'qituvchi raqib emas, hamkasb.\nEng asosiysi — bu jarayonda o'quvchining manfaati zarar ko'rmasligi kerak. Kattalar o'rtasidagi kelishmovchilik bolaning rivojiga to'siq bo'lmasligi shart.",
+        keys: ["sababini aniqlayman", "xushmuomalalik bilan suhbat", "jadval moslashtirish", "pedkengash/direktor", "o'qituvchi — sherik, raqib emas"]
       },
       {
         q: "74. Biriktirilgan pedagog OTMga tayyorlashda sustkashlik qilyapti?",
-        a: "Pedagog bilan holatni xushmuomalalik bilan muhokama qilaman. Agar dars yuklamasi ko'p bo'lsa, o'quvchiga qo'shimcha bepul onlayn platformalar (Khan Academy, Ibrat farzandlari) orqali tayyorlanish rejasini tuzaman. Hal bo'lmasa boshqa pedagogga qayta biriktiraman.",
-        keys: ["suhbat", "onlayn platforma (Khan Academy/Ibrat farzandlari)", "qayta biriktirish"]
+        a: "Bu jiddiy holat, chunki o'quvchining oliyohga tayyorgarligi xavf ostida.\nAvval ayblamasdan, pedagog bilan suhbatlashib sababini aniqlayman — bandlikmi, charchoqmi, yoki mas'uliyatni yetarli his qilmayaptimi?\nSo'ng unga o'quvchining ahvoli muhimligini, vaqt ketayotganini tushuntiraman, real va qulay jadval tuzaman.\nAgar bu yordam bermasa, direktor va pedagogik kengash orqali masalani ko'taraman. Zarur bo'lsa, o'quvchini boshqa kuchli o'qituvchiga biriktiraman yoki ishonchli MOOC, onlayn resurslarni topib beraman.\nMening tamoyilim aniq: kattalarning sustkashligi tufayli o'quvchining tayyorgarligi to'xtab qolmasligi kerak. Vaqt — bitiruvchi uchun eng qimmatli boylik, uni boy berib bo'lmaydi. Shuning uchun men muammoni eshitib kutmayman, balki darhol muqobil yechim topaman.",
+        keys: ["sababni aniqlayman", "vaqt ketayotganini tushuntiram", "direktorga ko'taraman", "onlayn MOOC resurslar", "vaqt — eng qimmatli boylik"]
       },
       {
         q: "75. O'qituvchi yillik to'garak hisobotini topshirmadi?",
-        a: "Sababini bilaman; hisobot namunasini ko'rsatib amaliy yordam beraman; aniq muddat belgilayman; hal bo'lmasa ma'muriyatga yetkazaman. IT mutaxassisi sifatida yagona qulay elektron hisobot shaklini joriy qilaman. Ayblash emas, tizimni yo'lga qo'yish.",
-        keys: ["sabab", "namuna+yordam", "muddat", "elektron hisobot shakli (IT)"]
+        a: "Hisobot — to'garak natijasini ko'rsatadigan muhim hujjat, shuning uchun men buni e'tibordan chetda qoldirmayman.\nAvval ayblamayman. O'qituvchi bilan suhbatlashib sababini bilaman — bandlikmi, hujjat yuritishni bilmaslikmi, yoki shunchaki e'tiborsizlikmi?\nAgar sabab hujjatni qanday to'ldirishni bilmaslik bo'lsa, men hisobot namunasini ko'rsatib, amaliy yordam beraman. So'ng aniq muddat belgilayman.\nAgar shundan keyin ham hal bo'lmasa, masalani ma'muriyatga yetkazaman.\nLekin men bu yerda tizimli yechim ham taklif qilaman: barcha to'garak rahbarlari uchun yagona, qulay hisobot shaklini joriy qilaman — shunda hujjat yuritish hamma uchun oson bo'ladi va bunday muammo qaytarilmaydi.\nMening maqsadim — ayblash emas, tizimni yo'lga qo'yish. Chunki muammoning ildizini hal qilmasam, u har yili takrorlanaveradi.",
+        keys: ["sababni bilaman", "namuna ko'rsatib yordam", "aniq muddat", "yagona hisobot shakli", "tizimni yo'lga qo'yish"]
       },
       {
         q: "76. Ekskursiyaga olib bordingiz, o'quvchilar passiv?",
-        a: "Passivlikni qiziqishga aylantirish uchun kichik vazifalar beraman: \"Siz muhandisdan intervyu oling\", \"Siz ishlab chiqarish hajmini hisoblang\". Amaliy mas'uliyat passivlikni yo'qotadi.",
-        keys: ["kichik vazifa (intervyu/hisoblash)", "amaliy mas'uliyat"]
+        a: "Bu — format bilan bog'liq muammo, va men buni \"o'quvchi aybdor\" emas, \"format ishlamadi\" deb qabul qilaman.\nAvval passivlikning sababini aniqlayman — ko'pincha bu format zerikarli bo'lgani uchun.\nShuning uchun men interaktivlikka o'taman. Quruq video o'rniga jonli kasb egasi bilan uchrashuv, korxonaga ekskursiya, amaliy mahorat darsi tashkil etaman. Geymifikatsiyadan foydalanaman — \"Bir kun — bir kasb\" kvesti kabi. Eng yaxshisi — o'quvchilarning o'zlariga kasb haqida video tayyorlatib, tanlov uyushtiraman.\nEkskursiyada esa o'quvchilarni faol jalb qilaman — savol berishga undayman, kichik topshiriq beraman, keyin muhokama o'tkazaman.\nMening tamoyilim: o'quvchi tomoshabin bo'lganida zerikadi, ishtirokchi bo'lganida qiziqadi. Maqsadim — o'quvchini jarayonning chetida emas, markazida qo'yish. Faol ishtirokchi bo'lganda qiziqish o'z-o'zidan paydo bo'ladi.",
+        keys: ["format ishlamadi", "jonli uchrashuv/ekskursiya", "geymifikatsiya", "kichik topshiriq + muhokama", "tomoshabin zerikadi, ishtirokchi qiziqadi"]
       },
       {
         q: "77. Kasb tanlash videolari o'quvchilarni qiziqtirmadi?",
@@ -603,8 +603,8 @@ const STUDY_DATA = [
       },
       {
         q: "78. Festival kerak, lekin mablag' ham, homiy ham yo'q?",
-        a: "Mablag' yo'qligi to'siq emas: maktab zali va o'quvchilarning o'z liboslaridan foydalanaman; o'quvchi va ota-onalarni jalb qilaman; sahna bezagini o'quvchilar tayyorlaydi; ijtimoiy tarmoqda yoritib, kelajakda homiy jalb qilaman. Festival qiymati pulda emas, g'oyada.",
-        keys: ["mavjud imkoniyat", "ota-ona/o'quvchi jalb", "sahnani o'zlari", "qiymat g'oyada"]
+        a: "Bu savolda komissiya sizni \"mablag' yo'q\" sharti bilan sinaydi. Men buni to'siq emas, ijodkorlikka chaqiriq deb qabul qilaman.\nBirinchidan, mavjud imkoniyatdan maksimal foydalanaman — maktab zali, o'quvchilarning o'z resurslari. Ikkinchidan, o'quvchilar va ota-onalarni jalb qilaman — ko'p ota-ona o'z sohasida mutaxassis, bepul yordam bera oladi. Uchinchidan, sahna bezagi va dekoratsiyani o'quvchilarning o'zlari rasm va qo'l mehnati bilan tayyorlaydi. To'rtinchidan, festivalni ijtimoiy tarmoqda yoritaman — bu kelajakda homiy jalb qilishga yo'l ochadi. Grant loyihalarida ham ishtirok etaman.\nMening ishonchim shu: festivalning qiymati pulda emas, g'oya va ishtirokda. Kichik byudjet bilan ham, o'quvchilar qalbdan ishtirok etsa, esda qoladigan tadbir bo'ladi.\nMaqsadim — \"sharoit yo'q\" deb qo'l qovushtirib o'tirmaslik. Resurs topishni bilgan odam uchun resurs har doim topiladi.",
+        keys: ["ijodkorlikka chaqiriq", "maktab zali va o'z resurslar", "ota-ona mutaxassis — bepul yordam", "sahna — o'quvchilar o'zi", "qiymat pulda emas, g'oyada"]
       },
       {
         q: "79. \"Raqamli avlod qizlari\" klubida o'quvchilar kamayib ketdi?",
@@ -618,33 +618,38 @@ const STUDY_DATA = [
       },
       {
         q: "81. Sizga korrupsion taklif qilinsa?",
-        a: "Mutlaqo murosasizman. \"Korrupsiyaga qarshi kurashish to'g'risida\"gi Qonun va odob-axloq qoidalariga qat'iy rioya qilaman. Taklifni rad etaman va tegishli organlarga xabar beraman. Obro', halollik va o'quvchilar ishonchi har narsadan ustun. Maslahatchi — o'quvchilarga o'rnak.",
-        keys: ["murosasiz", "Korrupsiya qonuni", "rad+xabar", "o'quvchilarga o'rnak"]
+        a: "Bu savolda mening pozitsiyam murosasiz va qat'iy.\nMen korrupsion taklifni hech qanday ikkilanishsiz rad etaman. \"Korrupsiyaga qarshi kurashish to'g'risida\"gi Qonun va pedagogik odob-axloq qoidalariga qat'iy rioya qilaman, va belgilangan tartibda tegishli organlarga xabar beraman.\nMen buni nima uchun shunchalik qat'iy qilaman? Chunki men o'quvchilarga halollikni o'rgataman. Agar o'zim nohalol bo'lsam, mening barcha so'zlarim qiymatini yo'qotadi. Bola so'zga emas, o'rnakka qaraydi.\nMaslahatchi — o'quvchilar uchun namuna. Men uchun obro', halollik va o'quvchilar ishonchi har qanday moddiy manfaatdan ustun turadi.\nShaffoflik — mening asosiy tamoyilim. Men shunday inson bo'lishni xohlamanki, o'quvchilarim ertaga \"bizning ustozimiz halol odam edi\" deb eslashsin. Halol topilgan obro' — eng katta boylik.",
+        keys: ["murosasiz", "Korrupsiya qonuni", "rad + xabar beraman", "bola so'zga emas, o'rnakka qaraydi", "halol obro' — eng katta boylik"]
       },
       {
         q: "82. Sinfda o'g'rilik sodir bo'ldi, ota-ona kelib janjal qilyapti?",
-        a: "Vaziyatni tinchlantiraman — ota-onani alohida xonaga, hurmat bilan tinglayman; psixolog bilan ham ayblanayotgan bola, ham boshqa o'quvchilar ruhiyatini himoya qilaman; masalani oshkora ayblovsiz, xolis o'rganaman (guvohsiz hech kimni aybdor qilmayman); ma'muriyat bilan adolatli yechim; halollik mavzusida tarbiyaviy sinf soati. Maqsad — bolalar psixikasini asrash.",
-        keys: ["tinchlantirish", "psixolog+ruhiyat himoyasi", "guvohsiz aybdor qilmaslik", "tarbiyaviy soat"]
+        a: "Bu — eng nozik keyslardan biri, chunki bu yerda bolalar psixikasi xavf ostida. Men juda ehtiyotkorlik bilan ish tutaman.\nBirinchi qadam — vaziyatni tinchlantirish. Ota-onani alohida xonaga taklif qilaman — jamoat oldida hech qachon bahsga kirmayman. Hurmat bilan tinglayman, chunki g'azablangan odam avval eshitilishini xohlaydi.\nIkkinchi qadam — psixolog bilan ishlab, ham ayblanayotgan bola, ham boshqa o'quvchilar ruhiyatini himoya qilaman.\nUchinchi qadam — masalani oshkora ayblovsiz, xolis o'rganaman. Guvohsiz, dalilsiz hech kimni aybdor qilmayman — chunki noto'g'ri ayblov bolaning butun hayotiga dog' tushiradi.\nTo'rtinchi qadam — sinf rahbari va ma'muriyat bilan adolatli yechim topaman.\nBeshinchi qadam — tarbiyaviy xulosa: halollik va o'zganing haqqi mavzusida sinf soati o'tkazaman.\nMaqsadim — bolalar psixikasini asrash va bu og'ir vaziyatni ham tarbiya imkoniyatiga aylantirish. Chunki bir tomonni tinglab qaror qilgan odam — ko'zi ko'r sudyaga o'xshaydi.",
+        keys: ["5 qadam", "alohida xonaga", "psixolog — ruhiyat himoyasi", "guvohsiz aybdor qilmaslik", "tarbiyaviy sinf soati", "ko'zi ko'r sudya emas"]
       },
       {
         q: "83. Prezident maktabi o'quvchilari past natija ko'rsatdi?",
-        a: "Psixolog bilan sababini aniqlayman; individual reja; fan o'qituvchisi + MOCK; ota-ona bilan ish; yangi maqsad va rag'bat. Iqtidorni yo'qotmaslik — mening mas'uliyatim.",
-        keys: ["sabab", "individual reja", "fan o'qituvchisi+MOCK", "rag'bat"]
+        a: "Iqtidorli o'quvchining bilimi pasayishi — bu menga signal: biror narsa noto'g'ri ketyapti.\nMen avval panikaga tushmayman va ayblamayman. Psixolog bilan birgalikda sababini aniqlayman — bu charchoqmi, oilaviy muammomi, sog'liqmi, motivatsiya pasaygami yoki do'stlar ta'sirimi?\nSababga qarab individual reja tuzaman. Ota-ona bilan ishlayman, kerak bo'lsa yukini yengillashtiraman. So'ng unga yangi maqsad va rag'bat beraman — tanlov, oliyoh orzusi kabi.\nHolatini doimiy kuzatib boraman, har bir kichik yutuqini rag'batlantiraman, toki uning o'ziga ishonchi qaytsin.\nMen buni eng jiddiy vazifalardan biri deb bilaman. Chunki har bir iqtidorli o'quvchi — mamlakatning kelajagi. Bitta iqtidor so'nsa, bu nafaqat bolaning, balki butun jamiyatning yo'qotishi. Shuning uchun men hech bir iqtidorli o'quvchining yo'lda qolib ketishiga yo'l qo'ymayman.",
+        keys: ["signal", "psixolog bilan sabab", "individual reja", "yangi maqsad + rag'bat", "iqtidor — mamlakatning kelajagi"]
       },
       {
         q: "84. Bir vaqtda bir nechta topshiriq berilsa, ustuvorlikni qanday belgilaysiz?",
-        a: "Topshiriqlarni muhimligi va muddati bo'yicha tartiblayman — \"Eyzenxauer matritsasi\" yordamida \"muhim va shoshilinch\"larini birinchi bajaraman. Kun/hafta rejasini tuzaman; diqqatni jamlash uchun \"Pomodoro texnikasi\"dan foydalanaman. Aniq reja — vahimaning dushmani.",
-        keys: ["Eyzenxauer matritsasi", "Pomodoro", "aniq reja — vahimaning dushmani"]
+        a: "Bu — vaqtni boshqarish ko'nikmasini sinaydigan savol, men unga tizimli javob beraman.\nMen topshiriqlarni Eyzenxauer matritsasi tamoyili asosida tartiblayman: har bir vazifani ikki mezon bo'yicha baholayman — qanchalik muhim va qanchalik shoshilinch.\nShoshilinch va muhim ishlarni birinchi navbatda o'zim bajaraman. Muhim, lekin shoshilinch bo'lmaganlarini rejalashtirib qo'yaman. Shoshilinch, lekin kam muhimlarini imkon bo'lsa boshqaga topshiraman. Na muhim, na shoshilinch bo'lganlarini esa keyinga qoldiraman.\nMen kunlik va haftalik reja tuzaman, shunda hech bir muhim ish e'tibordan chetda qolmaydi. Agar resurs yoki vaqt yetishmasa, rahbariyat bilan maslahatlashib, real muddatni kelishaman.\nMening tamoyilim: aniq reja — vahimaning eng yaxshi dushmani. Ko'p ish bosib kelganda sarosimaga tushgan emas, balki ularni tartibga solgan inson g'alaba qozonadi. Tartibli ishlagan — tinch ishlaydi.",
+        keys: ["Eyzenxauer matritsasi", "shoshilinch+muhim — birinchi", "kunlik/haftalik reja", "aniq reja — vahimaning dushmani", "tartibli ishlagan — tinch ishlaydi"]
       },
       {
         q: "85. Ish uchun resurs yoki sharoit yetishmasa?",
-        a: "Hal qilinadigan vazifa deb qabul qilaman: Nizomdagi huquqim asosida maktabdan sharoit talab qilaman; hududiy \"Kelajak\" markazi xulosasi bilan grant loyihalarda ishtirok etaman; homiy va hamkorlarni jalb qilaman; mavjud imkoniyatdan maksimal foydalanaman. \"Sharoit yo'q\" deb qo'l qovushtirmayman.",
-        keys: ["Nizom huquqi", "grant loyiha", "homiy", "qo'l qovushtirmayman"]
+        a: "Men resurs yetishmovchiligini muammo emas, hal qilinadigan vazifa deb qabul qilaman.\nBirinchidan, Nizomdagi huquqim asosida maktabdan zarur sharoit va moliyalashtirishni talab qilaman — chunki bu mening qonuniy huquqim.\nIkkinchidan, hududiy \"Kelajak\" markazi xulosasi bilan grant loyihalarida ishtirok etaman.\nUchinchidan, homiy va hamkorlarni — mahalliy korxonalar, IT-Park, ota-onalarni jalb qilaman.\nTo'rtinchidan, mavjud imkoniyatdan maksimal foydalanaman.\nMen hech qachon \"sharoit yo'q\" deb qo'l qovushtirib o'tirmayman. Chunki sharoitni kutib o'tirgan odam hech narsa qilolmaydi, sharoitni yaratgan odam esa har doim yo'l topadi.\nMaqsadim — qiyinchilikni bahona qilmaslik. Resurs — topishni bilgan odamga topiladi. Eng katta resurs esa pul emas, balki tashabbus va ishtiyoqdir.",
+        keys: ["Nizom huquqi — talab qilaman", "grant loyiha", "homiy/IT-Park/ota-ona", "qo'l qovushtirmayman", "eng katta resurs — tashabbus va ishtiyoq"]
       },
       {
         q: "86. Ijtimoiy himoyaga muhtoj oila farzandiga yo'l xaritasi",
-        a: "Ro'yxat (Ijtimoiy reyestr) → imtiyozlar haqida ma'lumot → qobiliyatini aniqlab bepul to'garak/klubga jalb → kasb-hunarga yo'naltirish → iqtidorli bo'lsa grant asosida oliygohga → maktab/homiy yordamida o'quv vositalari, mahalla hamkorligi. Maqsad — moddiy qiyinchilik iqtidorga to'sqinlik qilmasligi.",
-        keys: ["ro'yxat → imtiyoz → bepul klub → kasb-hunar → grant → homiy/mahalla"]
+        a: "Bu savol mening eng muhim vazifalarimdan biriga tegishli — hech bir bola moddiy qiyinchilik tufayli iqtidoridan ayrilmasligi kerak.\nMen aniq yo'l xaritasi bilan ishlayman. Birinchidan, Ijtimoiy reyestr asosida bunday o'quvchilar ro'yxatini shakllantiraman. Ikkinchidan, ularga mavjud imtiyozlar haqida ma'lumot beraman. Uchinchidan, qobiliyatini aniqlab, bepul to'garak va klublarga jalb qilaman. To'rtinchidan, tezroq mustaqillikka erishishi uchun kasb-hunarga yo'naltiraman. Beshinchidan, agar iqtidorli bo'lsa, bosqichma-bosqich reja bilan oliyohga grant asosida kirishiga ko'maklashaman. Oltinchidan, maktab va homiylar yordamida o'quv vositalari bilan ta'minlayman, mahalla bilan hamkorlik qilaman.\nPF-86 Farmonida ham Ijtimoiy reeyestrdagi oilalar farzandlariga alohida e'tibor va imtiyozlar belgilangan — men bundan to'liq foydalanaman.\nMaqsadim — moddiy qiyinchilik iqtidorga to'sqinlik qilmasligi, har bir bola teng imkoniyatga ega bo'lishi. Chunki iqtidor boylikni tanlamaydi — u har qanday oilada tug'ilishi mumkin.",
+        keys: ["Ijtimoiy reyestr", "imtiyozlar", "bepul to'garak/klub", "kasb-hunar", "grant", "PF-86", "iqtidor boylikni tanlamaydi"]
+      },
+      {
+        q: "87. Tanlov natijasidan norozilik (apellyatsiya tartibi)",
+        a: "Tanlovlarda men adolat va oshkoralikni eng muhim tamoyil deb bilaman, va apellyatsiya tartibini aniq bilaman.\nTanlov natijasidan norozi bo'lgan ishtirokchi belgilangan muddatda — masalan Turon teatr tanlovida natija e'lon qilingach 15 daqiqa ichida — Apellyatsiya komissiyasiga murojaat qiladi. Komissiya 3 kishidan iborat bo'lib, hakamlar tarkibiga kirmagan mustaqil mutaxassislardan tuziladi va shikoyatni 1 soat ichida ko'rib chiqib, asoslangan javob beradi.\nMen o'z vazifamda eng muhimi — shaffof va xolis baholashni ta'minlash. Chunki baholash adolatli bo'lsa, apellyatsiyaga ehtiyoj ham kamayadi.\nNorozilik bo'lganda men ishtirokchini tinchlantiraman, jarayonni qonuniy va hurmat bilan olib boraman.\nMening tamoyilim: adolat faqat natijada emas, jarayonda ham ko'rinishi kerak. Ishtirokchi yutqazsa ham, \"menga adolatli munosabatda bo'lishdi\" deb ketishi kerak. Chunki shaffoflik — ishonchning poydevoridir.",
+        keys: ["15 daqiqa ichida ariza", "3 kishilik komissiya", "1 soat ichida javob", "shaffof va xolis baholash", "shaffoflik — ishonch poydevori"]
       }
     ]
   },
