@@ -1,6 +1,14 @@
-// Maktab Maslahatchisi — Tayyorgarlik ilovasi (Android TTS optimized)
+// Maktab Maslahatchisi — ElevenLabs TTS (o'zbek ovozi)
 (function () {
   "use strict";
+
+  // ================================================================
+  //  ElevenLabs sozlamalari — bu yerda o'zgartiring
+  // ================================================================
+  const EL_API_KEY  = "sk_f75ba0926b1f80752373e951d77f29c05f4439ceee93ac08";
+  const EL_VOICE_ID = "IKne3meq5aSn9XLyUdCD"; // Charlie — ko'p tilda yaxshi
+  const EL_MODEL    = "eleven_multilingual_v2"; // o'zbek tili uchun eng yaxshi model
+  // ================================================================
 
   const STORAGE_KEY = "maslahatchi_progress_v1";
   const THEME_KEY   = "maslahatchi_theme";
@@ -14,7 +22,6 @@
   });
   const totalItems = itemIndex;
 
-  // ---- storage ----
   function loadProgress() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
     catch (e) { return {}; }
@@ -22,7 +29,6 @@
   function saveProgress(p) { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); }
   let progress = loadProgress();
 
-  // ---- theme ----
   function applyTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
     const icon = t === "dark" ? "☀️" : "🌙";
@@ -39,7 +45,6 @@
   document.getElementById("themeToggle").addEventListener("click", toggleTheme);
   document.getElementById("themeToggleMobile").addEventListener("click", toggleTheme);
 
-  // ---- helpers ----
   function escapeHtml(s) {
     return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
   }
@@ -51,100 +56,142 @@
   function groupDone(g) { return groupItems(g).filter((it) => progress[it._id]).length; }
 
   // ================================================================
-  //  TTS MODULI — Android Chrome uchun optimallashtirilgan
+  //  ElevenLabs TTS MODULI
   // ================================================================
   const TTS = (function () {
-    const synth = window.speechSynthesis;
-    let uzVoice  = null;   // o'zbek ovozi (Android Google TTS)
-    let fallback = null;   // zaxira ovoz
-    let activeBtn = null;
-    let rate = 0.88;
+    let currentAudio = null;
+    let currentBtn   = null;
+    let speed        = 1.0;
+    const cache      = {}; // matn -> blob URL (kredit tejash)
 
-    // Android Chrome da ovozlar kech yuklanadi — kutamiz
-    function loadVoices() {
-      const voices = synth.getVoices();
-      // 1-ustuvorlik: uz-UZ (Android Google TTS — sof o'zbek)
-      uzVoice = voices.find(v => /^uz/i.test(v.lang));
-      // 2-ustuvorlik: tr-TR (turk — o'zbekchani aniq o'qiydi)
-      if (!uzVoice) fallback = voices.find(v => /^tr/i.test(v.lang));
-      // 3-ustuvorlik: birinchi mavjud ovoz
-      if (!uzVoice && !fallback) fallback = voices[0] || null;
-    }
-
-    if (synth) {
-      loadVoices();
-      synth.onvoiceschanged = loadVoices;
-    }
-
-    function bestVoice() { return uzVoice || fallback; }
-
-    function setRate(r) { rate = r; }
-
-    // Android da uzun matn "freeze" qilmasligi uchun
-    // matnni qismlarga bo'lib o'qiymiz
-    function splitText(text) {
-      // Vergul va nuqta bo'yicha bo'laklarga ajratamiz (~150 belgi)
-      const parts = [];
-      const sentences = text.split(/(?<=[.!?,:;])\s+|(?<=\s{2,})/);
-      let chunk = "";
-      sentences.forEach(s => {
-        if ((chunk + s).length > 150) {
-          if (chunk) parts.push(chunk.trim());
-          chunk = s;
-        } else {
-          chunk += (chunk ? " " : "") + s;
-        }
-      });
-      if (chunk.trim()) parts.push(chunk.trim());
-      return parts.length ? parts : [text];
-    }
-
-    function speakParts(parts, idx, onDone) {
-      if (idx >= parts.length) { if (onDone) onDone(); return; }
-      const utt = new SpeechSynthesisUtterance(parts[idx]);
-      const v = bestVoice();
-      if (v) utt.voice = v;
-      utt.lang  = v ? v.lang : "uz-UZ";
-      utt.rate  = rate;
-      utt.pitch = 1.0;
-      utt.onend   = () => speakParts(parts, idx + 1, onDone);
-      utt.onerror = () => { stop(); };
-      // Android Chrome "stall" bug workaround
-      setTimeout(() => synth.speak(utt), idx === 0 ? 0 : 50);
-    }
-
-    function speak(text, btn, onDone) {
-      if (!synth) return;
-      stop();
-      activeBtn = btn;
-      if (btn) { btn.classList.add("tts-playing"); btn.textContent = "⏹"; btn.title = "To'xtatish"; }
-      const parts = splitText(text);
-      speakParts(parts, 0, () => {
-        if (activeBtn === btn) finish(btn);
-        if (onDone) onDone();
-      });
-    }
-
-    function finish(btn) {
-      if (btn) { btn.classList.remove("tts-playing"); btn.textContent = "🔊"; btn.title = "Ovoz bilan o'qi"; }
-      activeBtn = null;
-      const st = document.getElementById("audio-status");
-      if (st) st.textContent = "🔊 Tayyor";
-    }
+    function setSpeed(s) { speed = s; }
 
     function stop() {
-      synth && synth.cancel();
-      if (activeBtn) finish(activeBtn);
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+      }
+      if (currentBtn) {
+        currentBtn.classList.remove("tts-playing");
+        currentBtn.textContent = "🔊";
+        currentBtn.title = "Ovoz bilan o'qi";
+        currentBtn = null;
+      }
+      setStatus("🔊 Tayyor");
     }
 
-    function isPlaying() { return synth && synth.speaking; }
+    function setStatus(txt) {
+      const el = document.getElementById("audio-status");
+      if (el) el.textContent = txt;
+    }
 
-    return { speak, stop, setRate, isPlaying, bestVoice,
-             supported: !!synth };
+    async function fetchAudio(text) {
+      // Cache tekshir — bir xil matn uchun qayta so'rov yo'q
+      if (cache[text]) return cache[text];
+
+      const resp = await fetch(
+        "https://api.elevenlabs.io/v1/text-to-speech/" + EL_VOICE_ID + "/stream",
+        {
+          method: "POST",
+          headers: {
+            "xi-api-key":   EL_API_KEY,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            text:       text,
+            model_id:   EL_MODEL,
+            voice_settings: {
+              stability:         0.5,
+              similarity_boost:  0.8,
+              style:             0.0,
+              use_speaker_boost: true,
+            },
+          }),
+        }
+      );
+
+      if (!resp.ok) {
+        const err = await resp.json().catch(() => ({}));
+        throw new Error(err.detail?.message || "ElevenLabs xato: " + resp.status);
+      }
+
+      const blob = await resp.blob();
+      const url  = URL.createObjectURL(blob);
+      cache[text] = url; // keshga saqla
+      return url;
+    }
+
+    async function speak(text, btn, onDone) {
+      stop();
+      currentBtn = btn;
+      if (btn) {
+        btn.classList.add("tts-playing");
+        btn.textContent = "⏳";
+        btn.title = "Yuklanmoqda...";
+      }
+      setStatus("⏳ Yuklanmoqda...");
+
+      try {
+        const url   = await fetchAudio(text);
+        const audio = new Audio(url);
+        audio.playbackRate = speed;
+        currentAudio = audio;
+
+        if (btn) {
+          btn.textContent = "⏹";
+          btn.title = "To'xtatish";
+        }
+        setStatus("🔊 O'qilmoqda...");
+
+        audio.onended = () => {
+          if (currentBtn === btn) {
+            if (btn) {
+              btn.classList.remove("tts-playing");
+              btn.textContent = "🔊";
+              btn.title = "Ovoz bilan o'qi";
+            }
+            currentAudio = null;
+            currentBtn   = null;
+            setStatus("🔊 Tayyor");
+          }
+          if (onDone) onDone();
+        };
+
+        audio.onerror = () => {
+          stop();
+          setStatus("❌ Audio xato");
+        };
+
+        audio.play();
+      } catch (err) {
+        stop();
+        console.error(err);
+        if (err.message.includes("401")) {
+          setStatus("❌ API key xato");
+        } else if (err.message.includes("quota") || err.message.includes("credit")) {
+          setStatus("❌ Kredit tugadi");
+        } else {
+          setStatus("❌ " + err.message);
+        }
+      }
+    }
+
+    // Savol → pauza → Javob ketma-ket o'qish
+    function speakQA(q, a, btn) {
+      speak("Savol: " + q, btn, () => {
+        setTimeout(() => {
+          if (!currentAudio) { // foydalanuvchi to'xtatmagan bo'lsa
+            speak("Javob: " + a, btn);
+          }
+        }, 700);
+      });
+    }
+
+    return { speak, speakQA, stop, setSpeed, supported: true };
   })();
 
   // ================================================================
-  //  AUDIO PANEL (pastki o'ng burchak)
+  //  AUDIO PANEL
   // ================================================================
   function injectAudioPanel() {
     const p = document.createElement("div");
@@ -153,21 +200,18 @@
       '<span id="audio-status" class="audio-status-text">🔊 Tayyor</span>' +
       '<label class="audio-rate-label">Tezlik:' +
       '<select id="audio-rate">' +
-      '<option value="0.7">Sekin</option>' +
-      '<option value="0.88" selected>Normal</option>' +
-      '<option value="1.05">Tez</option>' +
-      '<option value="1.25">Juda tez</option>' +
+      '<option value="0.8">Sekin</option>' +
+      '<option value="1.0" selected>Normal</option>' +
+      '<option value="1.25">Tez</option>' +
+      '<option value="1.5">Juda tez</option>' +
       '</select></label>' +
       '<button id="audio-stop" class="audio-stop-btn">⏹ To\'xtat</button>';
     document.body.appendChild(p);
 
     document.getElementById("audio-rate").addEventListener("change", function () {
-      TTS.setRate(parseFloat(this.value));
+      TTS.setSpeed(parseFloat(this.value));
     });
-    document.getElementById("audio-stop").addEventListener("click", () => {
-      TTS.stop();
-      document.getElementById("audio-status").textContent = "🔊 To'xtatildi";
-    });
+    document.getElementById("audio-stop").addEventListener("click", () => TTS.stop());
   }
   injectAudioPanel();
 
@@ -183,7 +227,7 @@
     groupNav.innerHTML = "";
     STUDY_GROUPS.forEach(g => {
       const btn = document.createElement("button");
-      btn.className   = "group-item" + (g.id === activeGroupId ? " active" : "");
+      btn.className     = "group-item" + (g.id === activeGroupId ? " active" : "");
       btn.dataset.group = g.id;
       const items = groupItems(g);
       btn.innerHTML =
@@ -213,18 +257,16 @@
   }
 
   // ================================================================
-  //  ITEM QURILISHI — 🔊 TUGMA
+  //  ITEM — 🔊 TUGMA (ElevenLabs)
   // ================================================================
   function buildItem(it) {
     const item = document.createElement("div");
     item.className    = "item" + (progress[it._id] ? " done" : "");
     item.dataset.search = (it.q + " " + it.a + " " + (it.keys||[]).join(" ")).toLowerCase();
 
-    // Savol qatori
     const qRow = document.createElement("div");
     qRow.className = "item-q";
 
-    // ✓ belgisi
     const check = document.createElement("button");
     check.className = "item-check" + (progress[it._id] ? " checked" : "");
     check.innerHTML = progress[it._id] ? "✓" : "";
@@ -240,19 +282,15 @@
       updateProgress();
     });
 
-    // Savol matni
     const qText = document.createElement("div");
-    qText.className = "item-q-text";
+    qText.className   = "item-q-text";
     qText.textContent = it.q;
 
-    // ▼ belgisi
     const qChev = document.createElement("span");
-    qChev.className = "item-q-chevron";
+    qChev.className   = "item-q-chevron";
     qChev.textContent = "▼";
 
-    // ================================================================
-    //  🔊 OVOZ TUGMASI
-    // ================================================================
+    // 🔊 TUGMA
     const ttsBtn = document.createElement("button");
     ttsBtn.className   = "tts-btn";
     ttsBtn.textContent = "🔊";
@@ -260,31 +298,12 @@
 
     ttsBtn.addEventListener("click", e => {
       e.stopPropagation();
-
-      // Agar shu tugma o'qiyotgan bo'lsa — to'xtat
       if (ttsBtn.classList.contains("tts-playing")) {
         TTS.stop();
         return;
       }
-
-      // Javobni ochib qo'yamiz
       item.classList.add("expanded");
-
-      const st = document.getElementById("audio-status");
-      if (st) st.textContent = "🔊 O'qilmoqda...";
-
-      // Avval savol, so'ng javob o'qiladi
-      TTS.speak("Savol: " + it.q, ttsBtn, () => {
-        // Savol tugadi — 800ms kutib javobni o'qi
-        setTimeout(() => {
-          if (!ttsBtn.classList.contains("tts-playing")) {
-            // Foydalanuvchi to'xtatmagan bo'lsa davom et
-            TTS.speak("Javob: " + it.a, ttsBtn, () => {
-              if (st) st.textContent = "🔊 Tayyor";
-            });
-          }
-        }, 800);
-      });
+      TTS.speakQA(it.q, it.a, ttsBtn);
     });
 
     qRow.appendChild(check);
@@ -293,7 +312,6 @@
     qRow.appendChild(qChev);
     qRow.addEventListener("click", () => item.classList.toggle("expanded"));
 
-    // Javob bloki
     const ansWrap = document.createElement("div");
     ansWrap.className = "item-a";
     let keysHtml = "";
@@ -308,11 +326,9 @@
     return item;
   }
 
-  // ---- render active group ----
   function renderActiveGroup() {
     const group = STUDY_GROUPS.find(g => g.id === activeGroupId);
     content.innerHTML = "";
-
     const heading = document.createElement("div");
     heading.className = "group-heading";
     const items = groupItems(group);
@@ -321,7 +337,6 @@
       "<div><h2>" + escapeHtml(group.title) + "</h2>" +
       "<p>" + items.length + " ta savol-javob</p></div>";
     content.appendChild(heading);
-
     group.sections.forEach(sid => {
       const sec = SECTION_MAP[sid];
       if (!sec) return;
@@ -337,7 +352,6 @@
     });
   }
 
-  // ---- qidiruv ----
   const searchInput = document.getElementById("searchInput");
   const clearSearch = document.getElementById("clearSearch");
 
@@ -357,7 +371,13 @@
       const sub = document.createElement("div");
       sub.className = "subsection";
       sub.innerHTML = '<div class="subsection-title">' + sec.icon + " " + escapeHtml(sec.title) + "</div>";
-      matched.forEach(it => { const el = buildItem(it); el.classList.add("expanded"); highlight(el,q); sub.appendChild(el); count++; });
+      matched.forEach(it => {
+        const el = buildItem(it);
+        el.classList.add("expanded");
+        highlight(el, q);
+        sub.appendChild(el);
+        count++;
+      });
       content.appendChild(sub);
     });
     if (!count) {
@@ -389,7 +409,6 @@
   searchInput.addEventListener("input", doSearch);
   clearSearch.addEventListener("click", () => { clearSearchState(); renderActiveGroup(); searchInput.focus(); });
 
-  // ---- progress ----
   function updateProgress() {
     const done = Object.keys(progress).filter(k => progress[k]).length;
     const pct  = totalItems ? Math.round(done/totalItems*100) : 0;
@@ -398,7 +417,6 @@
     document.getElementById("progressCount").textContent   = done + " / " + totalItems;
   }
 
-  // ---- tugmalar ----
   document.getElementById("expandAll").addEventListener("click", () =>
     content.querySelectorAll(".item").forEach(i => i.classList.add("expanded")));
   document.getElementById("collapseAll").addEventListener("click", () => {
@@ -415,7 +433,6 @@
     }
   });
 
-  // ---- mobil sidebar ----
   const sidebar = document.getElementById("sidebar");
   const overlay = document.getElementById("overlay");
   function openSidebar()  { sidebar.classList.add("open");    overlay.classList.add("visible"); }
@@ -423,12 +440,10 @@
   document.getElementById("menuToggle").addEventListener("click", openSidebar);
   overlay.addEventListener("click", closeSidebar);
 
-  // ---- yuqoriga ----
   const backToTop = document.getElementById("backToTop");
   window.addEventListener("scroll", () => backToTop.classList.toggle("visible", window.scrollY > 400));
   backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-  // ---- ishga tushirish ----
   renderSidebar();
   renderActiveGroup();
   updateProgress();
