@@ -1,4 +1,4 @@
-// Maktab Maslahatchisi — Tayyorgarlik ilovasi (sidebar layout)
+// Maktab Maslahatchisi — Tayyorgarlik ilovasi (sidebar layout + Audio TTS)
 (function () {
   "use strict";
 
@@ -6,7 +6,6 @@
   const THEME_KEY = "maslahatchi_theme";
   const ACTIVE_KEY = "maslahatchi_active_group";
 
-  // section id -> section
   const SECTION_MAP = {};
   let itemIndex = 0;
   STUDY_DATA.forEach((sec) => {
@@ -56,12 +55,162 @@
     return groupItems(group).filter((it) => progress[it._id]).length;
   }
 
+  // ================================================================
+  // AUDIO TTS MODULI
+  // ================================================================
+  const TTS = (function () {
+    let preferredLang = null;
+    let isReady = false;
+    let currentBtn = null;
+
+    // Tillarni ustuvorlik bo'yicha sinab ko'ramiz
+    const LANG_PRIORITY = ["tr-TR", "uz-UZ", "uz", "tr", "ru-RU", "en-US"];
+
+    function getVoices() {
+      return window.speechSynthesis ? window.speechSynthesis.getVoices() : [];
+    }
+
+    function pickBestLang() {
+      if (preferredLang) return preferredLang;
+      const voices = getVoices();
+      if (!voices.length) return "tr-TR";
+      for (const lang of LANG_PRIORITY) {
+        const found = voices.find((v) =>
+          v.lang.toLowerCase().startsWith(lang.toLowerCase().substring(0, 5))
+        );
+        if (found) {
+          preferredLang = found.lang;
+          return preferredLang;
+        }
+      }
+      return "tr-TR";
+    }
+
+    function init(cb) {
+      if (!window.speechSynthesis) return;
+      if (getVoices().length > 0) {
+        isReady = true;
+        if (cb) cb();
+      } else {
+        window.speechSynthesis.onvoiceschanged = function () {
+          isReady = true;
+          if (cb) cb();
+        };
+      }
+    }
+
+    function stop() {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+      if (currentBtn) {
+        currentBtn.classList.remove("tts-playing");
+        currentBtn.title = "Ovoz bilan o'qi";
+        currentBtn = null;
+      }
+    }
+
+    function speak(text, btn, onDone) {
+      if (!window.speechSynthesis) {
+        alert("Brauzeringiz ovoz funksiyasini qo'llab-quvvatlamaydi.");
+        return;
+      }
+
+      // Avvalgi ovozni to'xtat
+      stop();
+
+      const lang = pickBestLang();
+      const voices = getVoices();
+      const voice = voices.find((v) =>
+        v.lang.toLowerCase().startsWith(lang.toLowerCase().substring(0, 5))
+      ) || voices[0];
+
+      const utt = new SpeechSynthesisUtterance(text);
+      if (voice) utt.voice = voice;
+      utt.lang = lang;
+      utt.rate = 0.88;
+      utt.pitch = 1.0;
+
+      currentBtn = btn;
+      if (btn) {
+        btn.classList.add("tts-playing");
+        btn.title = "To'xtatish";
+      }
+
+      utt.onend = function () {
+        if (currentBtn === btn) {
+          if (btn) {
+            btn.classList.remove("tts-playing");
+            btn.title = "Ovoz bilan o'qi";
+          }
+          currentBtn = null;
+        }
+        if (onDone) onDone();
+      };
+
+      utt.onerror = function () {
+        if (btn) {
+          btn.classList.remove("tts-playing");
+          btn.title = "Ovoz bilan o'qi";
+        }
+        currentBtn = null;
+      };
+
+      window.speechSynthesis.speak(utt);
+    }
+
+    function speakQA(q, a, btn) {
+      // Avval savol, keyin "Javob:" so'ng javob o'qiladi
+      speak(q, btn, function () {
+        setTimeout(function () {
+          speak("Javob: " + a, btn);
+        }, 700);
+      });
+    }
+
+    return { init, speak, speakQA, stop, isSupported: !!window.speechSynthesis };
+  })();
+
+  // TTS ni ishga tushir
+  TTS.init();
+
+  // ================================================================
+  // GLOBAL AUDIO PANEL (o'qish tezligi + to'xtatish tugmasi)
+  // ================================================================
+  function injectAudioPanel() {
+    const panel = document.createElement("div");
+    panel.id = "audio-panel";
+    panel.innerHTML =
+      '<span id="audio-status" class="audio-status-text">🔊 Ovoz tayyor</span>' +
+      '<label class="audio-rate-label">Tezlik: ' +
+      '<select id="audio-rate">' +
+      '<option value="0.7">Sekin</option>' +
+      '<option value="0.88" selected>Normal</option>' +
+      '<option value="1.1">Tez</option>' +
+      '<option value="1.3">Juda tez</option>' +
+      "</select></label>" +
+      '<button id="audio-stop" class="audio-stop-btn" title="To\'xtatish">⏹ To\'xtat</button>';
+    document.body.appendChild(panel);
+
+    document.getElementById("audio-stop").addEventListener("click", function () {
+      TTS.stop();
+      document.getElementById("audio-status").textContent = "🔊 To'xtatildi";
+    });
+
+    document.getElementById("audio-rate").addEventListener("change", function () {
+      // Keyingi o'qishlarda ishlaydi (global rate)
+      window._ttsRate = parseFloat(this.value);
+    });
+    window._ttsRate = 0.88;
+  }
+  injectAudioPanel();
+
+  // ================================================================
+  // SIDEBAR
+  // ================================================================
   const content = document.getElementById("content");
   const groupNav = document.getElementById("groupNav");
   let activeGroupId = localStorage.getItem(ACTIVE_KEY) || STUDY_GROUPS[0].id;
   if (!STUDY_GROUPS.some((g) => g.id === activeGroupId)) activeGroupId = STUDY_GROUPS[0].id;
 
-  // ---- sidebar ----
   function renderSidebar() {
     groupNav.innerHTML = "";
     STUDY_GROUPS.forEach((g) => {
@@ -74,6 +223,7 @@
         '<span class="group-item-text">' + escapeHtml(g.title) + "</span>" +
         '<span class="group-item-count">' + groupDone(g) + "/" + items.length + "</span>";
       btn.addEventListener("click", () => {
+        TTS.stop();
         activeGroupId = g.id;
         localStorage.setItem(ACTIVE_KEY, activeGroupId);
         clearSearchState();
@@ -96,7 +246,9 @@
     });
   }
 
-  // ---- build a single item element ----
+  // ================================================================
+  // ITEM QURILISHI — 🔊 TUGMA QOSHILDI
+  // ================================================================
   function buildItem(it) {
     const item = document.createElement("div");
     item.className = "item" + (progress[it._id] ? " done" : "");
@@ -105,6 +257,7 @@
     const qRow = document.createElement("div");
     qRow.className = "item-q";
 
+    // ✓ belgisi
     const check = document.createElement("button");
     check.className = "item-check" + (progress[it._id] ? " checked" : "");
     check.innerHTML = progress[it._id] ? "✓" : "";
@@ -128,8 +281,78 @@
     qChev.className = "item-q-chevron";
     qChev.textContent = "▼";
 
+    // ================================================================
+    // 🔊 OVOZ TUGMASI
+    // ================================================================
+    const ttsBtn = document.createElement("button");
+    ttsBtn.className = "tts-btn";
+    ttsBtn.title = "Ovoz bilan o'qi";
+    ttsBtn.innerHTML = "🔊";
+    ttsBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      // Agar hozir o'qilayotgan bo'lsa — to'xtat
+      if (ttsBtn.classList.contains("tts-playing")) {
+        TTS.stop();
+        return;
+      }
+
+      // Javobni ham ochib, keyin o'qi
+      item.classList.add("expanded");
+      document.getElementById("audio-status").textContent = "🔊 O'qilmoqda...";
+
+      const rate = window._ttsRate || 0.88;
+      // Savol o'qi
+      const q = it.q;
+      const a = it.a;
+
+      const utt1 = new SpeechSynthesisUtterance("Savol: " + q);
+      const voices = window.speechSynthesis.getVoices();
+      const LANG_PRIORITY = ["tr-TR", "uz-UZ", "uz", "tr", "ru-RU", "en-US"];
+      let voice = null;
+      for (const lang of LANG_PRIORITY) {
+        voice = voices.find((v) => v.lang.toLowerCase().startsWith(lang.toLowerCase().substring(0, 5)));
+        if (voice) break;
+      }
+      if (voice) utt1.voice = voice;
+      utt1.rate = rate;
+      utt1.pitch = 1.0;
+
+      ttsBtn.classList.add("tts-playing");
+      ttsBtn.title = "To'xtatish";
+
+      const utt2 = new SpeechSynthesisUtterance("Javob: " + a);
+      if (voice) utt2.voice = voice;
+      utt2.rate = rate;
+      utt2.pitch = 1.0;
+
+      utt1.onend = function () {
+        setTimeout(function () {
+          if (ttsBtn.classList.contains("tts-playing")) {
+            window.speechSynthesis.speak(utt2);
+          }
+        }, 600);
+      };
+
+      utt2.onend = function () {
+        ttsBtn.classList.remove("tts-playing");
+        ttsBtn.title = "Ovoz bilan o'qi";
+        document.getElementById("audio-status").textContent = "🔊 Tayyor";
+      };
+
+      utt1.onerror = utt2.onerror = function () {
+        ttsBtn.classList.remove("tts-playing");
+        ttsBtn.title = "Ovoz bilan o'qi";
+        document.getElementById("audio-status").textContent = "🔊 Xato";
+      };
+
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utt1);
+    });
+
     qRow.appendChild(check);
     qRow.appendChild(qText);
+    qRow.appendChild(ttsBtn);
     qRow.appendChild(qChev);
     qRow.addEventListener("click", () => item.classList.toggle("expanded"));
 
@@ -176,11 +399,12 @@
     });
   }
 
-  // ---- search across everything ----
+  // ---- search ----
   const searchInput = document.getElementById("searchInput");
   const clearSearch = document.getElementById("clearSearch");
 
   function renderSearch(q) {
+    TTS.stop();
     content.innerHTML = "";
     const heading = document.createElement("div");
     heading.className = "group-heading";
@@ -254,6 +478,7 @@
   });
   document.getElementById("collapseAll").addEventListener("click", () => {
     content.querySelectorAll(".item").forEach((i) => i.classList.remove("expanded"));
+    TTS.stop();
   });
   document.getElementById("resetProgress").addEventListener("click", () => {
     if (confirm("Barcha progress tozalansinmi? Bu amalni qaytarib bo'lmaydi.")) {
